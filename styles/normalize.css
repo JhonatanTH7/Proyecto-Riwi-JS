@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #cac2b7;
+  --cyan: #48f5f9;
+  --green: #35e6b5;
+  --yellow: #ffc443;
+  --orange: #ff8b38;
+  --magenta: #d43347;
+  --purple: #db50e2;
+  --backInpus: #ede6d6;
+  --backbuttons: linear-gradient(
+    90deg,
+    rgba(255, 196, 67, 1) 0%,
+    rgba(255, 139, 56, 1) 100%
+  );
+  --backfooter: rgb(202, 194, 183, 70);
+}
+/* ORDER
+  
+          BACKGROUND PAGE: WHITE 
+          ICONS : POR DEFINIR COLORES Y SOMBRAS
+          FONT: INTER
+  
+              **NAVBAR** 
+              BACKGROUND : WHITE
+              FONT-SIZE: 16 PX
+              FONT-COLOR: BLACK
+              FONT-WEIFHT:NORMAL
+              CAPITALICE
+              ICON-SIZE (MENU):50 PX
+              ICONS-SIZE: 40 PX
+              SEPARATION BETWEEN ICONS H: 40 PX 
+  
+              **SEARCH BAR** 
+              BACKGROUND : GRAY 
+              BORDER RADIUS : 10 PX
+              TEXT: Search type of keywords
+              FONT-SIZE: 12 PX
+              FONT-COLOR: BLACK
+              FONT-WEIFHT:NORMAL
+              LOWERCASE
+          
+              **DROP-DOWN MENU**
+              BACKGROUND : WHITE
+              FONT-SIZE: 16 PX
+              FONT-COLOR: BLACK
+              FONT-WEIFHT:SEMI-BOLD
+              CAPITALICE
+              ICONS-SIZE: 40 PX
+              GAP ICONS :30 PX 
+  
+              **FOOTER**
+              BACKGROUND: BACKFOOTER
+              FONT-SIZE: 16 PX
+              FONT-COLOR: BLACK 
+              FONT-WEIFHT:SEMI-BOLD
+              CAPITALICE
+              ICONS-SIZE: 40 PX
+  
+              **MAPS**
+              BACKGROUND: GRAY
+              BORDER RADIUS : 10 PX
+              ICONS-SIZE: 40 PX
+              GAP ICONS: 10 PX 
+  
+              **LOCATION**
+              BACKGROUND: WHITE
+              BORDER RADIUS : 10 PX
+              BORDER-COLOR: MAGENTA
+              BORDER-SIZE: 2 PX  
+              ICON-SIZE (PIN): 30 PX
+              ICONS-SIZE: 20 PX
+              ICON-SIZE (CLOSE): 10 PX
+              GAP ICONS: 10 PX 
+              TITLE: LOCATION
+              FONT-SIZE: 20 PX
+              FONT-COLOR: BLACK
+              FONT-WEIFHT (TITLE): BOLD
+              CAPITALICE 
+  
+                  **BOX INPUT**
+                  BACKGROUND: BACKINPUTS
+                  BORDER RADIUS : 10 PX 
+                  ICON-SIZE (PIN): 30 PX
+                  ICONS-SIZE: 10 PX 
+                  FONT-SIZE (INPUT): 16 PX
+                  FONT-COLOR (INPUT): BLACK
+                  FONT-WEIFHT (INPUT): NORMAL
+                  LOWERCASE 
+                  GAP INPUTS: 10 PX 
+  
+              
+              **UPDATES**
+              BACKGROUND: WHITE
+              BORDER RADIUS : 10 PX
+              BORDER-COLOR: MAGENTA
+              BORDER-SIZE: 2 PX  
+              ICON-SIZE (STATISTICS): 30 PX
+              ICON-SIZE (CLOSE): 10 PX
+              GAP ICONS: 10 PX 
+              TITLE: UPDATES
+              FONT-SIZE (TITLE): 20 PX
+              FONT-COLOR (TITLE): BLACK
+              FONT-WEIFHT (TITLE): BOLD
+              CAPITALICE   
+  
+              
+                  **BOX STATISTICS**
+                  BACKGROUND: MAGENTA 38%
+                  BACKGROUND: ORANGE 38%
+                  BACKGROUND: YELLOW 60%
+                  BORDER RADIUS : 10 PX 
+                  GAP BOX  : 14 PX 
+                  FONT-SIZE (BOX): 16 PX
+                  FONT-COLOR (BOX): BLACK
+                  FONT-WEIFHT (BOX): NORMAL
+                  CAPITALICE   
+  
+          **GAS**
+              BACKGROUND: WHITE
+              BORDER RADIUS : 10 PX
+              BORDER-COLOR: MAGENTA
+              BORDER-SIZE: 2 PX  
+              ICON-SIZE (GAS): 30 PX
+              ICON-SIZE (CLOSE): 10 PX
+              GAP ICONS: 10 PX 
+              TITLE: GAS
+              FONT-SIZE (TITLE): 20 PX
+              FONT-WEIFHT (TITLE): BOLD
+              CAPITALICE   
+              +PRICE : NUMBER RANDOM (STATISTICS)
+              FONT-SIZE (+PRICE): GREEN
+              FONT-WEIFHT ( +PRICE): NORMAL */
