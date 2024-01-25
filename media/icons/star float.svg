@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M92 0C96.4189 0 100 3.58112 100 8L100 92C100 96.4189 96.4189 100 92 100L8 100C3.58112 100 0 96.4189 0 92L0 8C0 3.58112 3.58112 0 8 0L92 0Z" id="path_1" />
+    <path d="M87.3283 40.7811C86.9152 39.4461 85.8107 38.4735 84.4955 38.2702L62.8362 34.9724L53.1574 14.3898C51.9771 11.8701 48.0313 11.8701 46.851 14.3898L37.1638 34.9724L15.5045 38.2702C14.1809 38.4735 13.0848 39.4461 12.6717 40.7723C12.2586 42.1073 12.6043 43.575 13.5654 44.5564L29.2302 60.568L25.529 83.1929C25.3014 84.5809 25.8409 85.9779 26.9285 86.8001C28.0077 87.6224 29.4494 87.7285 30.6298 87.0742L49.9958 76.3939L69.3702 87.0742C69.8845 87.3571 70.441 87.4986 71.0059 87.4986C71.7309 87.4986 72.456 87.2599 73.0715 86.8001C74.1506 85.9779 74.6986 84.5809 74.471 83.1929L70.7698 60.568L86.4346 44.5564C87.3958 43.575 87.7414 42.1073 87.3283 40.7723L87.3283 40.7811Z" id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+  </defs>
+  <g id="Group-1436">
+    <g id="Rectangle-39">
+      <use stroke="none" fill="#525252" fill-opacity="0.69803923" xlink:href="#path_1" />
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#CAC2B7" stroke-width="2" />
+      </g>
+    </g>
+    <g id="Group-7">
+      <use stroke="none" fill="#48F5F9" fill-opacity="0" xlink:href="#path_2" fill-rule="evenodd" />
+      <g clip-path="url(#clip_2)">
+        <use xlink:href="#path_2" fill="none" stroke="#48F5F9" stroke-width="2" />
+      </g>
+    </g>
+  </g>
+</svg>
