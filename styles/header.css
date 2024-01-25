@@ -1,11 +1,8 @@
+/* General styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
 }
 
 header {
@@ -13,20 +10,26 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 15vh;
+  height: 12vh;
   min-height: 50px;
+  max-width: 100vw;
+}
+
+main {
+  height: 88vh;
+  background: aquamarine;
 }
 
 /* Styles navigation bar */
 /* Left side */
 .navBar_icons_leftSide {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
 }
 .navBar_icons_leftSide img {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
 }
 .navBar_infoButton_leftSide {
   border-radius: 50%;
@@ -34,6 +37,7 @@ header {
 
 /* Middle */
 .navBar_searchBar {
+  display: flex;
   border-radius: 10px;
   width: fit-content;
   outline: red;
@@ -43,9 +47,13 @@ header {
   height: 35px;
 }
 .navBar_searchBar input {
-  height: 100%;
+  width: 20vw;
   outline: none;
   background: transparent;
+}
+.navBar_searchBar label {
+  display: flex;
+  align-items: center;
 }
 .navBar_searchBar:focus-within {
   box-shadow: 1px 1px 10px #222;
@@ -58,15 +66,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 .navBar_languageDropdown_flag {
   height: 36px;
-}
-
-.content {
-  background: aquamarine;
-  height: 100vh;
 }
 
 .dropdown-item {
@@ -83,4 +86,13 @@ header {
 .dropdown-menu {
   padding: 0;
   justify-content: start;
+}
+
+@media (max-width: 768px) {
+  .navBar_languageDropdown,
+  .navBar_helpDropdown,
+  .navBar_searchBar input,
+  .navBar_searchBar label {
+    display: none;
+  }
 }
