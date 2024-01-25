@@ -28,8 +28,8 @@ main {
   align-items: center;
 }
 .navBar_icons_leftSide img {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 .navBar_infoButton_leftSide {
   border-radius: 50%;
@@ -78,7 +78,7 @@ main {
   justify-content: start;
   min-height: 39px;
   height: 8vh;
-  width: 15vw;
+  width: 100%;
   min-width: fit-content;
   font-size: 15px;
 }
