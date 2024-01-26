@@ -32,6 +32,7 @@ main {
   width: 50px;
 }
 .navBar_infoButton_leftSide {
+  border: none;
   border-radius: 50%;
 }
 
