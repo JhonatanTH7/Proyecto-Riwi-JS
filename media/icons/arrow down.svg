@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Iconarrow-down">
+    <path d="M41.2462 51.2493C40.5883 51.2493 39.9397 51.0088 39.422 50.4931L27.2975 38.3586C26.2947 37.3618 26.2947 35.7119 27.2975 34.7147C28.2896 33.7181 29.9382 33.7181 30.9311 34.7147L41.2462 45.0275L51.5551 34.7147C52.5585 33.7181 54.2099 33.7181 55.2041 34.7147C56.2026 35.7119 56.2026 37.3618 55.2041 38.3586L43.0655 50.4931C42.55 51.0088 41.897 51.2493 41.2462 51.2493L41.2462 51.2493Z" id="Vector" fill="#D93357" fill-rule="evenodd" stroke="none" />
+    <path d="M100 0L0 0L0 100L100 100L100 0L100 0Z" id="Vector" fill="#D93357" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
