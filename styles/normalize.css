@@ -15,8 +15,8 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --brackgroundGray: rgba(202, 194, 183, 0.10);
-  --gray: #c2c
+  --gray: #cac2b7;
+  --backgorundGray: rgb(202, 194, 183,0.1);
   --cyan: #48f5f9;
   --green: #35e6b5;
   --yellow: #ffc443;
