@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="/styles/signin.css" />
+    <!-- link to icon -->
+    <link rel="shortcut icon" href="" type="" />
+  </head>
+  <body>
+    <div class="signIn">
+      <div class="container">
+        <div class="signIn_Title">
+          <h1>welcome Back!</h1>
+        </div>
+
+        <section class="signIn_Form">
+          <div class="signIn_Subtitle">
+            <p>Username</p>
+          </div>
+          <form class="form">
+            <div class="signIn_Form_Option">
+              <label for="Username"></label>
+              <input
+                class="signIn_Form_Username"
+                type="text"
+                placeholder="Username"
+                required
+              />
+              <img src="/media/icons/user input.svg" alt="user_input" />
+            </div>
+
+            <div class="signIn_Form__Option">
+              <div class="signIn_Subtitle">
+                <p>Password</p>
+              </div>
+              <label for="pasword"></label>
+              <input
+                class="signIn_Form_pasword"
+                type="password"
+                placeholder="******"
+                required
+              />
+              <img src="/media/icons/key input.svg" alt="key_input" />
+              <img src="/media/icons/eye input.svg" alt="eye_input" />
+            </div>
+
+            <div class="signIn_Checkbox">
+              <input
+                class="signIn_Checkbox_Remember"
+                type="checkbox"
+                id="remember"
+              />
+              <label for="remember">Remember me</label>
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button class="signIn_Button" type="LOGING">SIGN IN</button>
+          </form>
+
+          <div class="signIn__CreateAccount">
+            <label for="don't have">Don't have an account?</label>
+            <!-- link to sign up -->
+            <a href="/Ingles/SignUp/index.html">Sign up</a>
+          </div>
+
+          <div class="SignIn_Continue">
+            <div class="SignIn_Continue"></div>
+            <p>Or continue with</p>
+          </div>
+
+          <div class="SignIn_SocialMedia">
+            <!-- reviar los href -->
+            <a href="#">
+              <img
+                class="signIn_SocialMedia_Google"
+                src="/media/icons/google.svg"
+                alt="Aconunt Google"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="signIn_SocialMedia_Whatsapp"
+                src="/media/icons/whatsapp.svg"
+                alt="Aconunt whatsapp"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="signIn__SocialMedia_Facebook"
+                src="/media/icons/facebook.svg"
+                alt="Aconunt facebook"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
