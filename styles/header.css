@@ -24,16 +24,17 @@ main {
 /* Left side */
 .navBar_icons_leftSide {
   display: flex;
-  gap: 8px;
+  gap: 40px;
   align-items: center;
 }
-.navBar_icons_leftSide img {
-  height: 50px;
-  width: 50px;
-}
+
 .navBar_infoButton_leftSide {
   border: none;
   border-radius: 50%;
+}
+
+.navBar_infoButton_leftSide img {
+  height: 50px;
 }
 
 /* Middle */
@@ -51,6 +52,7 @@ main {
   width: 20vw;
   outline: none;
   background: transparent;
+  font-size: 12px;
 }
 .navBar_searchBar label {
   display: flex;
@@ -67,7 +69,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
+}
+
+.navBar_icons_rigthSide img {
+height: 40px;
 }
 .navBar_languageDropdown_flag {
   height: 36px;
