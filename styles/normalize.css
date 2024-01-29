@@ -25,7 +25,7 @@
   --magenta: #d43347;
   --purple: #db50e2;
   --backInputs: #ede6d6;
-  --: linear-gradient(
+  --backbuttons: linear-gradient(
     90deg,
     rgba(255, 196, 67, 1) 0%,
     rgba(255, 139, 56, 1) 100%
@@ -47,34 +47,24 @@
               LOWERCASE
               ICON-SIZE (MENU):50 PX
               ICONS-SIZE: 40 PX
-              SEPARATION BETWEEN ICONS H: 40 PX ( WHIT EXCEPTION THE ARROW)
+              SEPARATION BETWEEN ICONS H: 20 PX ( WHIT EXCEPTION THE ARROW)
   
-              **SEARCH BAR** 
-              BACKGROUND : gray 
-              BORDER RADIUS : 10 PX
-              TEXT: Search type of keywords
-              FONT-SIZE: 12 PX
-              FONT-COLOR: black
-              FONT-WEIFHT:NORMAL
-              ICONS-SIZE: 20 PX
-              LOWERCASE
-          
-              **LATERAL MENU**
-              BACKGROUND : backgorundGray
-              FONT-SIZE: 16 PX
-              FONT-COLOR: black
-              FONT-WEIFHT:SEMI-BOLD (SERVICE, HISTORY, YOUR ROUTE YOUR REPORT , SETTING , LOG OUT)
-              LOWERCASE
-              ICONS-SIZE: 40 PX
-              GAP ICONS :30 PX 
-  
-              **FOOTER**
-              BACKGROUND: gray
-              FONT-SIZE: 16 PX
-              FONT-COLOR: black 
-              FONT-WEIFHT:SEMI-BOLD
-              LOWERCASE
-              ICONS-SIZE: 40 PX
+                **SEARCH BAR** 
+                BACKGROUND : gray 
+                BORDER RADIUS : 10 PX
+                TEXT: Search type of keywords
+                FONT-SIZE: 12 PX
+                FONT-COLOR: black
+                FONT-WEIFHT:NORMAL
+                ICONS-SIZE: 20 PX
+                LOWERCASE
+                
+                **DROP-DOWN MENU**
+                BACKGROUND : backgorundGray
+                FONT-SIZE: 16 PX
+                FONT-COLOR: black
+                ICONS-SIZE: 30 PX
+                GAP ICONS :20 PX
   
               **MAPS**
               BACKGROUND: gray
@@ -115,8 +105,6 @@
                   FONT-WEIFHT: NORMAL
                   CAPITALICE 
 
-  
-              
               **ROAD IMPROVEMENTS**
               BACKGROUND: WHITE
               BORDER RADIUS : 10 PX
@@ -130,8 +118,7 @@
               FONT-COLOR (TITLE): black
               FONT-WEIFHT (TITLE): BOLD
               CAPITALICE   
-  
-              
+
                   **BOX STATISTICS**
                   BACKGROUND: MAGENTA 38%
                   BACKGROUND: ORANGE 38%
@@ -143,7 +130,7 @@
                   FONT-WEIFHT (BOX): NORMAL
                   BOX LOWERCASE 
   
-          **GAS**
+              **GAS**
               BACKGROUND: WHITE
               BORDER RADIUS : 10 PX
               BORDER-COLOR: MAGENTA
@@ -163,4 +150,104 @@
                 **GRAPICH**
                 COLOR: cyan 
                 ICON-DONUT: 8PX 
+
+            **LATERAL MENU**
+              BACKGROUND : backgorundGray
+              FONT-SIZE: 16 PX
+              FONT-COLOR: black
+              FONT-WEIFHT:SEMI-BOLD (SERVICE, HISTORY, YOUR ROUTE YOUR REPORT , SETTING , LOG OUT)
+              FONT-WEIFHT: NORMAL
+              LOWERCASE
+              ICONS-SIZE: 30 PX
+              GAP ICONS :20 PX 
+
+              **ALTERTS**
+              BACKGROUND: white
+              FONT-SIZE: 16 PX
+              FONT-COLOR: black 
+              FONT-WEIFHT:NORMAL
+              LOWERCASE
+              BORDER RADIUS : 10 PX
+              BORDER-COLOR: orange
+                            cyan
+                            yellow
+                            green 
+                            magenta
+                            purple
+                          NOTE: DEPENDIENDO LA ALERTA ES EL COLOR  
+              BORDER-SIZE: 2 PX  
+              SHADOW: X=0 Y=2 BLUR=10 NOTE: DEPENDIENDO LA ALERTA ES EL COLOR 
+              
+                **TITLE**
+                BACKGROUND: orange 9%
+                            cyan  9%
+                            yellow 9%
+                            green  9%
+                            magenta 9%
+                            purple 9%
+                          NOTE: DEPENDIENDO LA ALERTA ES EL COLOR  
+                FONT-SIZE: 20 PX
+                FONT-COLOR: black 
+                FONT-WEIFHT:BOLD
+                BORDER RADIUS : 10 PX
+                BORDER-COLOR: orange
+                            cyan
+                            yellow
+                            green 
+                            magenta
+                            purple
+                          NOTE: DEPENDIENDO LA ALERTA ES EL COLOR    
+                BORDER-SIZE: 2 PX  
+                CAPITALICE 
+
+              **FOOTER**
+              BACKGROUND: gray
+              FONT-SIZE: 16 PX
+              FONT-COLOR: black 
+              FONT-WEIFHT:SEMI-BOLD
+              LOWERCASE
+              ICONS-SIZE: 40 PX
+
+              **SAVED MAPS**
+              BACKGROUND: white
+              TITLE:SAVED MAPS 
+              ICON-SIZE (TITLE): 50 PX
+              FONT-SIZE (TITLE): 24 PX
+              FONT-WEIFHT (TITLE): BOLD
+              GAP CARDS: 30 PX 
+
+              **LOCATION**
+              BACKGROUND: white
+              BORDER RADIUS : 10 PX
+              BORDER-COLOR: MAGENTA
+              BORDER-SIZE: 2 PX  
+              ICONS-SIZE (LOCATION): 20 PX
+              ICONS-SIZE (STAR YELLOW): 30 PX
+              ICON-SIZE (-x): 10 PX
+              GAP ICONS: 10 PX 
+              TITLE: LOCATION
+              FONT-SIZE (TITLE): 20 PX
+              FONT-COLOR (TITLE): black
+              FONT-WEIFHT (TITLE): BOLD
+              
+                  **BOX INPUT**
+                  BACKGROUND: backInputs
+                  BORDER RADIUS : 10 PX 
+                  ICON-SIZE (PIN): 30 PX
+                  ICONS-SIZE: 10 PX 
+                  FONT-SIZE (INPUT): 16 PX
+                  FONT-COLOR (INPUT): black
+                  FONT-WEIFHT (INPUT): NORMAL
+                  INPUT LOWERCASE 
+                  GAP INPUTS: 10 PX 
+
+                  **BUTTON**
+                  BACKGROUND: backbuttons
+                  BORDER RADIUS : 12 PX 
+                  FONT-SIZE: 16 PX
+                  FONT-COLOR: white
+                  FONT-WEIFHT: NORMAL
+                  CAPITALICE 
+              
+               
               */
