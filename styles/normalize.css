@@ -33,6 +33,12 @@
   --backfooter: rgb(202, 194, 183, 70);
 }
 
+footer {
+  background: var(--gray);
+  height: 18vh;
+  width: 100vw;
+}
+
 /* ORDER
   
           BACKGROUND PAGE: white 
