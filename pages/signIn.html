@@ -11,80 +11,81 @@
   </head>
   <body>
     <div class="signIn">
-      <div class="container">
-        <div class="signIn_Title">
-          <h1>welcome Back!</h1>
-        </div>
+      <div class="signIn_Title">
+        <h1>WELCOME BACK!</h1>
+      </div>
 
-        <section class="signIn_Form">
+      <section class="signIn_Form">
+        <form class="form">
           <div class="signIn_Subtitle">
             <p>Username</p>
           </div>
-          <form class="form">
-            <div class="signIn_Form_Option">
-              <label for="Username"></label>
-              <input
-                class="signIn_Form_Username"
-                type="text"
-                placeholder="Username"
-                required
-              />
+          <div class="signIn_Form_Option">
+            <label for="Username">
               <img
                 src="/media/icons/user input.svg"
                 alt="user_input"
                 class="signIn_Form_User_Icon"
               />
-            </div>
-
-            <div class="signIn_Form__Option">
-              <div class="signIn_Subtitle">
-                <p>Password</p>
-              </div>
-              <label for="pasword"></label>
-              <input
-                class="signIn_Form_pasword"
-                type="password"
-                placeholder="******"
-                required
-              />
+            </label>
+            <input
+              id="Username"
+              class="signIn_Form_Username"
+              type="text"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="signIn_Subtitle">
+            <p>Password</p>
+          </div>
+          <div class="signIn_Form_Option">
+            <label for="password">
               <img
+                id="Key_Icon"
                 src="/media/icons/key input.svg"
                 alt="key_input"
-                class="signIn_Form_key_Icon"
+                class="signIn_Form_Key_Icon"
               />
-              <img
-                src="/media/icons/eye input.svg"
-                alt="eye_input"
-                class="signIn_Form_Eye_Icon"
-              />
-            </div>
+            </label>
+            <input
+              id="password"
+              class="signIn_Form_password"
+              type="password"
+              placeholder="******"
+              required
+            />
+            <img
+              id="Eye_Icon"
+              src="/media/icons/eye input.svg"
+              alt="eye_input"
+              class="signIn_Form_Eye_Icon"
+            />
+          </div>
 
-            <div class="signIn_Checkbox">
+          <div class="signIn_Checkbox">
+            <div>
               <input
                 class="signIn_Checkbox_Remember"
                 type="checkbox"
                 id="remember"
               />
               <label for="remember">Remember me</label>
-              <a href="#">Forgot password?</a>
             </div>
-
-            <button class="signIn_Button" type="LOGING">SIGN IN</button>
-          </form>
-
-          <div class="signIn__CreateAccount">
-            <label for="don't have">Don't have an account?</label>
-            <!-- link to sign up -->
-            <a href="/Ingles/SignUp/index.html">Sign up</a>
+            <a href="#">Forgot password?</a>
           </div>
 
-          <div class="SignIn_Continue">
-            <div class="SignIn_Continue"></div>
-            <p>Or continue with</p>
-          </div>
+          <button class="signIn_Button" type="LOGING">SIGN IN</button>
+        </form>
 
-          <div class="SignIn_SocialMedia">
-            <!-- reviar los href -->
+        <div class="SignIn_Continue">
+          <div class="SignIn_Continue"></div>
+          <p>Or continue with</p>
+        </div>
+
+        <div class="SignIn_SocialMedia">
+          <!-- reviar los href -->
+          <div class="SocialMedia_Google">
             <a href="#">
               <img
                 class="signIn_SocialMedia_Google"
@@ -92,6 +93,8 @@
                 alt="Aconunt Google"
               />
             </a>
+          </div>
+          <div class="SocialMedia_Whatsapp">
             <a href="#">
               <img
                 class="signIn_SocialMedia_Whatsapp"
@@ -99,16 +102,22 @@
                 alt="Aconunt whatsapp"
               />
             </a>
+          </div>
+          <div class="SocialMedia_Facebook">
             <a href="#">
               <img
-                class="signIn__SocialMedia_Facebook"
+                class="signIn_SocialMedia_Facebook"
                 src="/media/icons/facebook.svg"
                 alt="Aconunt facebook"
               />
             </a>
           </div>
-        </section>
-      </div>
+        </div>
+        <div class="signIn_CreateAccount">
+          <label for="don't have">Don't have an account?</label>
+          <a href="/pages/signUp">Sign up</a>
+        </div>
+      </section>
     </div>
   </body>
 </html>
