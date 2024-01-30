@@ -24,23 +24,6 @@
   margin: 0;
 }
 
-.btnSubmit_contactUs {
-  background: var(--backbuttons);
-  border: none;
-  border-radius: 12px;
-  color: var(--white);
-  font-size: 20px;
-  font-weight: bold;
-  height: 40px;
-  width: 150px;
-}
-
-.form_contactUs_container_btnSubmit {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .form_contactUs_content_divElement {
   display: flex;
   flex-direction: column;
@@ -65,7 +48,19 @@
   text-align: start;
 }
 
-/* .footer {
-  height: 18vh;
-  background: var(--gray);
-} */
+.form_contactUs_container_btnSubmit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form_contactUs_container_btnSubmit button {
+  background: var(--backbuttons);
+  border: none;
+  border-radius: 12px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  width: 150px;
+}
