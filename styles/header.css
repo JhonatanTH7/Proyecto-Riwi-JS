@@ -23,6 +23,10 @@ header {
   width: 33.3%;
 }
 
+.navBar_icons_leftSide h6 {
+  color: var(--magenta);
+}
+
 .navBar_infoButton_leftSide {
   border: none;
   border-radius: 50%;
@@ -66,7 +70,7 @@ header {
 /* Right side */
 .navBar_icons_rigthSide {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 20px;
   width: 33.3%;
@@ -94,6 +98,22 @@ header {
 .dropdown-menu {
   padding: 0;
   height: fit-content;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: end;
+}
+
+.arrow_down_dropdownMenu {
+  height: 5px !important;
+  width: 8px !important;
+  margin-left: 8px;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 768px) {
