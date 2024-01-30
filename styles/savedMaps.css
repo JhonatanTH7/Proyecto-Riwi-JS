@@ -1,0 +1,103 @@
+@import url(normalize.css);
+
+body {
+  background: var(--white);
+  width: 100vw;
+  height: 100vh;
+}
+
+.savedMaps {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.savedMaps_Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.savedMaps_Icon {
+  width: 60px;
+  height: 60px;
+}
+
+.savedMaps_Text {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.savedMaps_Card {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid magenta;
+}
+
+.savedMaps_Card_Icon_Star {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 250px;
+}
+
+.savedMaps_Card_From {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.savedMaps_Card_From_Icon {
+  width: 20px;
+  height: 20px;
+}
+
+.savedMaps_Card_From_Input {
+  width: 230px;
+  height: 45px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  background: var(--backInputs);
+  border: none;
+  margin-bottom: 10px;
+}
+.savedMaps_Card_To_Input {
+  width: 230px;
+  height: 45px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  background: var(--backInputs);
+  border: none;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.savedMaps_Card_Button {
+  display: flex;
+  justify-content: center;
+}
+.savedMaps_Card_Button_Go {
+  background: var(--backbuttons);
+  width: 200px;
+  height: 45px;
+  border-radius: 12px;
+  border: 2px;
+  font-size: 20px;
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
