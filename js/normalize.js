@@ -61,11 +61,11 @@ while (!header) {
           </div>
         </div>
         <!-- Logo -->
-        <a href="#">
+        <a href="../index.html">
           <img src="../media/icons/google.svg" alt="logo" />
         </a>
         <!-- Page name -->
-        <h6 class="m-0">Proyecto XXX</h6>
+        <h6 class="m-0">Ruta 57</h6>
       </div>
 
       <!-- Input search bar -->
@@ -98,7 +98,7 @@ while (!header) {
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="../pages/">
                 <img src="../media/icons/about us.svg" alt="icon" />
                 <p
                   class="d-flex justify-content-center align-content-center m-0"
