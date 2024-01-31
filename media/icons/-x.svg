@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100.75049px" height="101.504395px" viewBox="0 0 100.75049 101.504395" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M33.3306 0L33.3306 0L33.3306 99.9756L0 99.9756L0 0L33.3306 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Group-1465">
+    <g id="minus">
+      <path d="M33.3306 0L33.3306 0L33.3306 99.9756L0 99.9756L0 0L33.3306 0Z" id="minus" fill="none" stroke="none" />
+      <g id="Group" transform="translate(6.0232725 49.028557)" clip-path="url(#clip_1)">
+        <g id="Group">
+          <path d="M0 0L21.3118 0" id="Line" fill="none" fill-rule="evenodd" stroke="#DB50E2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+      </g>
+      <g id="Group" transform="translate(6.0232725 49.028557)" clip-path="url(#clip_1)">
+        <g id="Group">
+          <path d="M0 0L21.3118 0" id="Line" fill="none" fill-rule="evenodd" stroke="#DB50E2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+      </g>
+    </g>
+    <g id="Group" transform="translate(66.66124 0)">
+      <g id="Group">
+        <path d="M33.3391 0L0 100.004" id="Line" fill="none" fill-rule="evenodd" stroke="#D93357" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <g id="Group">
+        <path d="M0 0L33.3391 100.004" id="Line" fill="none" fill-rule="evenodd" stroke="#DB50E2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>
