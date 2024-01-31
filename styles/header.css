@@ -7,7 +7,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 18vh;
-  min-height: 60px;
+  min-height: 100px;
   max-width: 100vw;
   padding-left: 30px;
   padding-right: 30px;
@@ -33,7 +33,7 @@ header {
 }
 
 .navBar_infoButton_leftSide img {
-  height: 50px;
+  height: 30px;
 }
 
 /* Middle */
@@ -122,5 +122,10 @@ header {
   .navBar_searchBar input,
   .navBar_searchBar label {
     display: none;
+  }
+
+  .navBar_logo {
+    height: 40px;
+    width: 40px;
   }
 }

@@ -1,9 +1,9 @@
 /* Selectors */
-let header
+let header;
 while (!header) {
-    header = document.querySelector("header")
-    if (header) {
-        header.innerHTML = `
+  header = document.querySelector("header");
+  if (header) {
+    header.innerHTML = `
     <!-- Left side icons -->
       <div class="navBar_icons_leftSide">
         <!-- Left side menu  -->
@@ -61,11 +61,11 @@ while (!header) {
           </div>
         </div>
         <!-- Logo -->
-        <a href="#">
-          <img src="../media/icons/google.svg" alt="logo" />
+        <a href="../index.html">
+          <img src="../media/icons/google.svg" alt="logo" class="navBar_logo"/>
         </a>
         <!-- Page name -->
-        <h6 class="m-0">Proyecto XXX</h6>
+        <h6 class="m-0">Ruta 57</h6>
       </div>
 
       <!-- Input search bar -->
@@ -108,7 +108,7 @@ while (!header) {
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/contact_us.html">
+              <a class="dropdown-item" href="../pages/contactUs.html">
                 <img src="../media/icons/phone.svg" alt="icon" />
                 <p
                   class="d-flex justify-content-center align-content-center m-0"
@@ -206,10 +206,10 @@ while (!header) {
           </ul>
         </li>
       </div>
-    `
-    } else {
-        document.body.prepend(document.createElement("header"))
-    }
+    `;
+  } else {
+    document.body.prepend(document.createElement("header"));
+  }
 }
 
 /* Events */
