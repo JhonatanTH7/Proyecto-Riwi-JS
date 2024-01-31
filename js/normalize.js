@@ -1,5 +1,5 @@
-/* general functions */
-
+/* general content */
+import { headerGeneral } from "./header";
 
 /* Selectors */
 const headerTemp = document.querySelector("header")
