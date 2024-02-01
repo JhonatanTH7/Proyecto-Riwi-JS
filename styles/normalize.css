@@ -3,16 +3,11 @@
 @import "https://js.arcgis.com/4.28/@arcgis/core/assets/esri/themes/light/main.css";
 
 * {
-  font-family: "inter", sans-serif;
+  font-family: "inter", sans-serif !important;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 :root {
@@ -41,6 +36,17 @@
   margin: 0;
   height: 100%;
   width: 100%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-left {
+  height: 100%;
+  width: 100%;
+  margin-top: 18vh;
 }
 
 footer {

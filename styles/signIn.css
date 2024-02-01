@@ -3,6 +3,7 @@
 body {
   background: var(--backgorundGray);
 }
+
 .signIn {
   position: absolute;
   background: white;
@@ -15,7 +16,25 @@ body {
 }
 
 .signIn_Title {
-  font-size: 20px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body {
+  width: auto;
+  height: auto;
+}
+
+.signIn_Title button {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.signIn_Title h1 {
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   padding: 30px;
@@ -28,12 +47,18 @@ body {
   margin-left: -250px;
 }
 
-.form {
+.formSing {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
+}
+
+.signIn_Title h1,
+.formSing p,
+.SignIn_Continue p {
+  margin: 0 !important;
 }
 
 .signIn_Form_Username,
@@ -50,13 +75,20 @@ body {
   display: flex;
   border-radius: 10px;
   justify-content: center;
+  align-items: center;
   background: var(--backInputs);
 }
+
 .signIn_Form_User_Icon,
 .signIn_Form_Key_Icon,
 .signIn_Form_Eye_Icon {
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 28px;
+  padding: 5px;
+}
+
+#Eye_Icon_Show {
+  display: none;
 }
 
 .signIn_Checkbox {
@@ -89,7 +121,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  margin: 20px;
+  margin: 15px;
 }
 
 .SocialMedia_Google,
@@ -101,6 +133,7 @@ body {
   display: flex;
   border-radius: 10px;
 }
+
 .SocialMedia_Google a,
 .SocialMedia_Whatsapp a,
 .SocialMedia_Facebook a {
