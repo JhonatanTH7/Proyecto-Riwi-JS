@@ -1,0 +1,127 @@
+@import url(normalize.css);
+
+/* Header styles */
+header {
+  position: static;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 18vh;
+  min-height: 60px;
+  max-width: 100vw;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: var(--backgorundGray);
+}
+
+/* Styles navigation bar */
+/* Left side */
+.navBar_icons_leftSide {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 33.3%;
+}
+
+.navBar_icons_leftSide h6 {
+  color: var(--magenta);
+}
+
+.navBar_infoButton_leftSide {
+  border: none;
+  border-radius: 50%;
+}
+
+.navBar_infoButton_leftSide img {
+  height: 50px;
+}
+
+/* Middle */
+.navBar_searchBar {
+  display: flex;
+  border-radius: 10px;
+  width: fit-content;
+  background: var(--gray);
+  height: 35px;
+}
+.navBar_searchBar input {
+  width: 20vw;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.navBar_searchBar label {
+  display: flex;
+  align-items: center;
+}
+
+.navBar_searchBar label img {
+  height: 17px;
+  padding-right: 10px;
+}
+
+.navBar_searchBar:focus-within {
+  box-shadow: 1px 1px 10px #222;
+  background: #fff;
+  border: none;
+}
+
+/* Right side */
+.navBar_icons_rigthSide {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  width: 33.3%;
+}
+
+.navBar_icons_rigthSide img {
+  height: 40px;
+  width: 40px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding-right: 40px;
+  height: 50px;
+  gap: 10px;
+}
+
+.dropdown-item img {
+  height: 30px;
+  width: 30px;
+}
+
+.dropdown-menu {
+  padding: 0;
+  height: fit-content;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: end;
+}
+
+.arrow_down_dropdownMenu {
+  height: 5px !important;
+  width: 8px !important;
+  margin-left: 8px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .navBar_languageDropdown,
+  .navBar_helpDropdown,
+  .navBar_searchBar input,
+  .navBar_searchBar label {
+    display: none;
+  }
+}

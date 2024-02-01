@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../styles/header.css">
-    <title>Proyecto XXX</title>
-  </head>
-  <body>
-    <header id="headerGeneral"></header>
-    <section></section>
-    <footer></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/normalize.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles/header.css" />
+  <title>Proyecto XXX</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+  <script>
+    require(["esri/config", "esri/Map", "esri/views/MapView"], function (esriConfig, Map, MapView) {
+
+      esriConfig.apiKey = "AAPKfa09e355e18540518953e490d7c73beeGA0EC15Nc1X7XbB-PoTqGPjKB3PEdh5l9aR4Zt1AHVtSF6hDdc7PJvU8AMmugCpT";
+
+      const map = new Map({
+        basemap: "arcgis/topographic" // basemap styles service
+      });
+
+      const view = new MapView({
+        map: map,
+        center: [6.25184, -75.56359], // Longitude, latitude
+        zoom: 13, // Zoom level
+        container: "viewDiv" // Div element
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <header id="headerGeneral"></header>
+  <div id="viewDiv"></div>
+  <footer></footer>
+  <script src="https://js.arcgis.com/4.28/"></script>
+  <script src="../js/normalize.js"></script>
+</body>
+
 </html>
