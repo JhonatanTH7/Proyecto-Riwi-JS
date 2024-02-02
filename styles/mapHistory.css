@@ -11,16 +11,28 @@
 }
 
 .mapHistory_topContent img {
-  height: 70px;
+  height: 60px;
 }
 
 .btnFilter,
 .btnFilter:hover,
 .btnFilter.show {
-  border: 1px solid var(--magenta);
+  border: none;
 }
 
 .mapHistory_bottomContent {
   height: 100%;
   width: 70%;
+}
+
+#filterSinceDate,
+#filterToDate {
+  border-radius: 10px;
+  background: var(--backInputs);
+  border: none;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  width: 150px;
 }
