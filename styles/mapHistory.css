@@ -25,6 +25,11 @@
   width: 70%;
 }
 
+.filterContent {
+  border: 1px solid var(--magenta);
+  border-radius: 10px;
+}
+
 #filterSinceDate,
 #filterToDate {
   border-radius: 10px;

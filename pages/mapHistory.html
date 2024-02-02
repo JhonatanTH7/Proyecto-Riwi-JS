@@ -14,6 +14,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../styles/signIn.css" />
     <link rel="stylesheet" href="../styles/mapHistory.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <title>Document</title>
@@ -42,19 +43,17 @@
               class="arrow_down_dropdownMenu"
             />
           </button>
-          <ul class="dropdown-menu ">
-            <li>
-              <div class="p-2">
-                <div class="d-flex flex-column">
-                  <label for="filterSinceDate">Since</label>
-                  <input type="date" id="filterSinceDate" />
-                </div>
-                <div class="d-flex flex-column">
-                  <label for="filterToDate">To</label>
-                  <input type="date" id="filterToDate" />
-                </div>
+          <ul class="dropdown-menu p-2 filterContent">
+            <div>
+              <div class="d-flex flex-column">
+                <label for="filterSinceDate">Since</label>
+                <input type="date" id="filterSinceDate" />
               </div>
-            </li>
+              <div class="d-flex flex-column">
+                <label for="filterToDate">To</label>
+                <input type="date" id="filterToDate" />
+              </div>
+            </div>
           </ul>
         </div>
         <div class="mapHistory_bottomContent_rigthColumn"></div>
