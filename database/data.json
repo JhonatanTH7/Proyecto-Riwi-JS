@@ -1,11 +1,25 @@
 {
-  "users": [
-    
-  ],
-  "saved":[
+  "users": [],
+  "saved": [
     {
-      "from": "Desde",
-      "to": "Destino"
+      "from": "Medellìn",
+      "to": "Coveñas",
+      "id": "0001"
+    },
+    {
+      "from": "Medellìn",
+      "to": "Coveñas",
+      "id": "0002"
+    },
+    {
+      "from": "Medellìn",
+      "to": "Coveñas",
+      "id": "0003"
+    },
+    {
+      "from": "Medellìn",
+      "to": "Coveñas",
+      "id": "0004"
     }
   ]
 }
