@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-* {
-  font-family: "inter", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* CSS url as Arcgis */
+@import "https://js.arcgis.com/4.28/@arcgis/core/assets/esri/themes/light/main.css";
 
 * {
-  padding: 0;
-  margin: 0;
+  font-family: "inter", sans-serif !important;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 :root {
@@ -31,6 +29,22 @@
     rgba(255, 139, 56, 1) 100%
   );
   --backfooter: rgb(202, 194, 183, 70);
+}
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-left {
+  margin-top: 18vh;
 }
 
 footer {

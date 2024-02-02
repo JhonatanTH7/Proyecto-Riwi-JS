@@ -1,0 +1,26 @@
+@import url(normalize.css);
+
+.mapHistory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 64vh;
+  width: 100vw;
+  gap: 30px;
+}
+
+.mapHistory_topContent img {
+  height: 70px;
+}
+
+.btnFilter,
+.btnFilter:hover,
+.btnFilter.show {
+  border: 1px solid var(--magenta);
+}
+
+.mapHistory_bottomContent {
+  height: 100%;
+  width: 70%;
+}
