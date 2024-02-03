@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   height: 25%;
 }
 
@@ -22,7 +22,7 @@
   height: 60px;
 }
 
-.btnFilter,
+.mapHistory_topContent .btnFilter,
 .btnFilter:hover,
 .btnFilter.show {
   border: none;
@@ -67,6 +67,14 @@
   height: 25px;
 }
 
+.star:hover {
+  background: yellow;
+}
+
 .mapHistory_card p {
   margin: 0;
+}
+
+.card {
+  width: 18rem;
 }
