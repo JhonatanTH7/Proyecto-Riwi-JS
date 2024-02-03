@@ -24,6 +24,25 @@ header {
   width: 33.3%;
 }
 
+.navBar_icons_leftSide .container_Logo {
+  width: 10vw;
+  height: 18vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden !important;
+  position: relative;
+  
+}
+
+.navBar_icons_leftSide .container_Logo .logo{
+  position: absolute;
+}
+
+.logoHidden {
+  overflow: hidden;
+}
+
 .navBar_icons_leftSide h6 {
   color: var(--magenta);
 }

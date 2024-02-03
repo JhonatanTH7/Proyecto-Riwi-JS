@@ -23,13 +23,16 @@ while (!header) {
           data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample"
           >
-          <img src="../media/icons/info.svg" alt="Menu" />
+          <img src="../../media/icons/info.svg" alt="Menu" />
           </button>
           
-          </div>
+          </div class="logoHidden">
           <!-- Logo -->
-          <a href="index_${document.querySelector("html").lang}.html">
-          <img src="../media/icons/google.svg" alt="logo" />
+          <a href="../../index_${document.querySelector("html").lang}.html">
+          <div class="container_Logo">
+          <img src="../../media/icons/logo.svg" alt="logo" class="logo"/>
+          </div>
+
           </a>
           <!-- Page name -->
           <h6 class="m-0">Ruta 57</h6>
@@ -43,7 +46,7 @@ while (!header) {
           class="border-0"
           placeholder="Search"
           />
-          <label for="search_bar"><img src="../media/icons/search.svg" /></label>
+          <label for="search_bar"><img src="../../media/icons/search.svg" /></label>
           </div>
           
           <!-- Right side icons -->
@@ -57,16 +60,16 @@ while (!header) {
             data-bs-toggle="dropdown"
             aria-expanded="false"
             >
-            <img src="../media/icons/sos.svg" alt="SOS" />
+            <img src="../../media/icons/sos.svg" alt="SOS" />
             <img
-            src="../media/icons/arrow down.png"
+            src="../../media/icons/arrow down.png"
             class="arrow_down_dropdownMenu"
             />
             </button>
             <ul class="dropdown-menu">
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/aboutUs.html">
-            <img src="../media/icons/about us.svg" alt="icon" />
+            <a class="dropdown-item" href="../${document.querySelector("html").lang}/aboutUs.html">
+            <img src="../../media/icons/about us.svg" alt="icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
             >
@@ -75,8 +78,8 @@ while (!header) {
             </a>
             </li>
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/contactUs.html">
-            <img src="../media/icons/phone.svg" alt="icon" />
+            <a class="dropdown-item" href="../${document.querySelector("html").lang}/contactUs.html">
+            <img src="../../media/icons/phone.svg" alt="icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
             >
@@ -87,7 +90,7 @@ while (!header) {
             </ul>
             </li>
             <!-- Notifications -->
-            <img src="../media/icons/notification.svg" alt="Bell" />
+            <img src="../../media/icons/notification.svg" alt="Bell" />
             
             <!-- DropDown language-->
             <li class="nav-item dropdown navBar_languageDropdown">
@@ -98,17 +101,17 @@ while (!header) {
             data-bs-toggle="dropdown"
             aria-expanded="false"
             >
-            <img src="../media/icons/language.svg" alt="Language" />
+            <img src="../../media/icons/language.svg" alt="Language" />
             <img
-            src="../media/icons/arrow down.png"
+            src="../../media/icons/arrow down.png"
             class="arrow_down_dropdownMenu"
             />
             </button>
             <ul class="dropdown-menu">
             <li>
-            <a class="dropdown-item" href="index_es.html"
+            <a class="dropdown-item" href="../es/${document.querySelector("html").id}.html"
             ><img
-            src="../media/icons/Spain-Flag.png"
+            src="../../media/icons/Spain-Flag.png"
             class="navBar_languageDropdown_flag"
             />
             <p
@@ -119,9 +122,9 @@ while (!header) {
             >
             </li>
             <li>
-            <a class="dropdown-item" href="index_en.html"
+            <a class="dropdown-item" href="../en/${document.querySelector("html").id}.html"
             ><img
-            src="../media/icons/USA-Flag.png"
+            src="../../media/icons/USA-Flag.png"
             class="navBar_languageDropdown_flag"
             />
             <p
@@ -143,16 +146,16 @@ while (!header) {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <img src="../media/icons/user nav.svg" alt="User" />
+            <img src="../../media/icons/user nav.svg" alt="User" />
             <img
-            src="../media/icons/arrow down.png"
+            src="../../media/icons/arrow down.png"
             class="arrow_down_dropdownMenu"
             />
             </button>
           <ul class="dropdown-menu">
             <li>
             <button class="dropdown-item">
-            <img src="../media/icons/sign in.svg" alt="Icon" />
+            <img src="../../media/icons/sign in.svg" alt="Icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
             >
@@ -161,8 +164,8 @@ while (!header) {
             </button>
             </li>
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/signUp.html">
-            <img src="../media/icons/sign up.svg" alt="Icon" />
+            <a class="dropdown-item" href="../${document.querySelector("html").lang}/signUp.html">
+            <img src="../../media/icons/sign up.svg" alt="Icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
             >

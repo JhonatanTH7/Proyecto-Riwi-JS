@@ -1,56 +1,60 @@
-const form = document.getElementById("form");
-const userName = document.getElementById("Username");
-const userPassword = document.getElementById("password");
+/* Selectors SingIN */
+const form_SignIn = document.getElementById("Form");
+const userName_SignIn = document.getElementById("Username");
+const userPassword_Signin = document.getElementById("Password");
 const eye_Icon = document.getElementById("Eye_Icon");
 const eye_Icon_Show = document.getElementById("Eye_Icon_Show");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    signin();
-});
+/* Events SingIN */
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   signin();
+// eye_Icon.addEventListener("click", () => {
+//     eye_Icon.style.display = "none"
+//     eye_Icon_Show.style.display = "block"
 
-async function signin() {
-    const URL = "http://localhost:3000/users";
-    const response = await fetch(`${URL}?usernName=${userName.value}`);
-    const data = await response.json();
+//     userPassword.type = "text"
+//   })
 
-    console.log(data);
+//   eye_Icon_Show.addEventListener("click", () => {
+//     eye_Icon_Show.style.display = "none"
+//     eye_Icon.style.display = "block"
 
-    if (!data.length) {
-        showAlert("Email not registered");
-        return;
-    }
+//     userPassword.type = "password"
+//   })
+// });
 
-    if (data[0].password === userPassword.value) {
-        localStorage.setItem("isAuthenticated", "true");
-        window.location.href = "administrator.html";
-    } else {
-        console.log("Contraseña incorrecta");
-    }
+/* Funcion SingIN */
+async function signIn() {
+  const URL = "http://localhost:3000/users";
+  const response = await fetch(`${URL}?userName=${userName_SignIn.value}`);
+  const data = await response.json();
+
+  console.log(data);
+
+  if (!data.length) {
+    showAlert("Email not registered");
+    return;
+  }
+
+  if (data[0].password === userPassword_Signin.value) {
+    localStorage.setItem("isLogin", "true");
+    window.location.href = `../../index_${
+      document.querySelector("html").lang
+    }.html`;
+  } else {
+    console.log("Incorrect password");
+  }
 }
 
 function showAlert(msg) {
-    Swal.fire({
-        title: "Error!",
-        text: msg,
-        icon: "error",
-        showConfirmButton: false,
-        timer: 4000,
-        toast: "true",
-        position: "bottom-right",
-    });
+  Swal.fire({
+    title: "Error!",
+    text: msg,
+    icon: "error",
+    showConfirmButton: false,
+    timer: 4000,
+    toast: "true",
+    position: "bottom-right",
+  });
 }
-
-eye_Icon.addEventListener("click", () => {
-    eye_Icon.style.display = "none"
-    eye_Icon_Show.style.display = "block"
-
-    userPassword.type = "text"
-})
-
-eye_Icon_Show.addEventListener("click", () => {
-    eye_Icon_Show.style.display = "none"
-    eye_Icon.style.display = "block"
-
-    userPassword.type = "password"
-})
