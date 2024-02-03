@@ -7,7 +7,6 @@ const userPassword = document.getElementById("password");
 const mobile = document.getElementById("mobile");
 
 const URL = "http://localhost:3000/users";
-alert("hola")
 
 form_SingUp.addEventListener("submit", (event) => {
   event.preventDefault();
