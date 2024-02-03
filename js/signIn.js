@@ -1,7 +1,7 @@
 /* Selectors SingIN */
-const form = document.getElementById("form");
-const userName = document.getElementById("Username");
-const userPassword = document.getElementById("password");
+const form_SignIn = document.getElementById("Form");
+const userName_SignIn = document.getElementById("Username");
+const userPassword_Signin = document.getElementById("Password");
 const eye_Icon = document.getElementById("Eye_Icon");
 const eye_Icon_Show = document.getElementById("Eye_Icon_Show");
 
@@ -25,9 +25,9 @@ const eye_Icon_Show = document.getElementById("Eye_Icon_Show");
 // });
 
 /* Funcion SingIN */
-async function signin() {
+async function signIn() {
   const URL = "http://localhost:3000/users";
-  const response = await fetch(`${URL}?userName=${userName.value}`);
+  const response = await fetch(`${URL}?userName=${userName_SignIn.value}`);
   const data = await response.json();
 
   console.log(data);
@@ -37,7 +37,7 @@ async function signin() {
     return;
   }
 
-  if (data[0].password === userPassword.value) {
+  if (data[0].password === userPassword_Signin.value) {
     localStorage.setItem("isLogin", "true");
     window.location.href = `../../index_${
       document.querySelector("html").lang
