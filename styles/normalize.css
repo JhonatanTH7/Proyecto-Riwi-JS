@@ -45,6 +45,7 @@ html, body {
 
 .menu-left {
   margin-top: 18vh;
+  width: min-content;
 }
 
 footer {

@@ -15,10 +15,10 @@ form_SingUp.addEventListener("submit", (event) => {
 });
 
 async function createUser() {
-  if (!validatePassword()) {
-    showAlert("invalid password ");
-    return;
-  }
+  // if (!validatePassword()) {
+  //   showAlert("invalid password ");
+  //   return;
+  // }
 
   if (await validateEmail()) {
     showAlert("Email is already registered");
@@ -63,12 +63,12 @@ function showAlert(msg) {
   });
 }
 
-function validatePassword() {
-  const regex =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+// function validatePassword() {
+//   const regex =
+//     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
 
-  return regex.test(userPassword.value);
-}
+//   return regex.test(userPassword.value);
+// }
 
 async function validateEmail() {
   try {
