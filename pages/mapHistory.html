@@ -22,14 +22,12 @@
   <body>
     <header></header>
     <section class="mapHistory">
-      <div
-        class="d-flex align-items-center justify-content-center gap-4 pt-4 mapHistory_topContent"
-      >
-        <img src="../media/icons/map.svg" />
+      <div class="mapHistory_topContent h-25">
+        <img src="../media/icons/map.svg" alt="saved icon" />
         <h2>Map history</h2>
       </div>
-      <div class="mapHistory_bottomContent">
-        <div class="mapHistory_bottomContent_leftColumn">
+      <div class="mapHistory_bottomContent h-75">
+        <div class="w-25">
           <button
             class="btn d-flex align-items-end btnFilter"
             type="button"
@@ -41,10 +39,11 @@
             <img
               src="../media/icons/arrow down.png"
               class="arrow_down_dropdownMenu"
+              alt="dropdown icon"
             />
           </button>
           <ul class="dropdown-menu p-2 filterContent">
-            <div>
+            <li>
               <div class="d-flex flex-column">
                 <label for="filterSinceDate">Since</label>
                 <input type="date" id="filterSinceDate" />
@@ -53,10 +52,41 @@
                 <label for="filterToDate">To</label>
                 <input type="date" id="filterToDate" />
               </div>
-            </div>
+            </li>
           </ul>
         </div>
-        <div class="mapHistory_bottomContent_rigthColumn"></div>
+        <div class="overflow-y-scroll w-75 d-flex gap-3 flex-wrap">
+          <div class="mapHistory_card">
+            <div class="text-end">
+              <img src="../media/icons/star gray.svg" class="star" alt="star" />
+            </div>
+            <div>
+              <div class="prueba d-flex gap-2">
+                <p>From</p>
+                <p>Medellín</p>
+              </div>
+              <div class="d-flex gap-2">
+                <p>To</p>
+                <p>Coveñas</p>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex gap-2">
+                <p>Date</p>
+                <p>01-01-2024</p>
+              </div>
+              <div class="d-flex gap-2">
+                <p>Time</p>
+                <p>Start</p>
+                <p>End</p>
+              </div>
+              <div class="d-flex gap-2">
+                <p>Km</p>
+                <p>497</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer></footer>

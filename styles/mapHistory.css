@@ -7,7 +7,15 @@
   align-items: center;
   height: 64vh;
   width: 100vw;
-  gap: 30px;
+  gap: 20px;
+}
+
+.mapHistory_topContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 25%;
 }
 
 .mapHistory_topContent img {
@@ -23,6 +31,8 @@
 .mapHistory_bottomContent {
   height: 100%;
   width: 70%;
+  display: flex;
+  padding-bottom: 10px;
 }
 
 .filterContent {
@@ -40,4 +50,23 @@
   padding-right: 10px;
   height: 40px;
   width: 150px;
+}
+
+.mapHistory_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--magenta);
+  border-radius: 10px;
+  height: max-content;
+  width: 300px;
+  padding: 8px;
+}
+
+.star {
+  height: 25px;
+}
+
+.mapHistory_card p {
+  margin: 0;
 }
