@@ -1,4 +1,4 @@
-const form = document.getElementById("form");
+const form_SingUp = document.getElementById("form");
 const firstName = document.getElementById("first_Name");
 const lastName = document.getElementById("last_Name");
 const email = document.getElementById("email");
@@ -7,8 +7,9 @@ const userPassword = document.getElementById("password");
 const mobile = document.getElementById("mobile");
 
 const URL = "http://localhost:3000/users";
+alert("hola")
 
-form.addEventListener("submit", (event) => {
+form_SingUp.addEventListener("submit", (event) => {
   event.preventDefault();
 
   createUser();
