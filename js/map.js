@@ -24,7 +24,7 @@ require(["esri/config", "esri/Map", "esri/Basemap", "esri/views/SceneView", "esr
         position: {
           x: -75.5635900,
           y: 6.2518400,
-          z: 3000
+          z: 1900
         },
         tilt: 75
       },
@@ -40,23 +40,23 @@ require(["esri/config", "esri/Map", "esri/Basemap", "esri/views/SceneView", "esr
       position: "top-right"
     });
 
-    const locate = new Locate({
-      view: view,
-      useHeadingEnabled: false,
-      goToOverride: function (view, options) {
-        options.target.scale = 1500;
-        return view.goTo(options.target);
-      }
-    });
-    view.ui.add(locate, "top-left");
+    // const locate = new Locate({
+    //   view: view,
+    //   useHeadingEnabled: false,
+    //   goToOverride: function (view, options) {
+    //     options.target.scale = 1500;
+    //     return view.goTo(options.target);
+    //   }
+    // });
+    // view.ui.add(locate, "top-left");
 
-    const searchWidget = new Search({
-      view: view
-    });
+    // const searchWidget = new Search({
+    //   view: view
+    // });
 
-    view.ui.add(searchWidget, {
-      position: "top-right"
-    });
+    // view.ui.add(searchWidget, {
+    //   position: "top-right"
+    // });
 
 
   })
