@@ -23,7 +23,16 @@ while (!header) {
           data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample"
           >
-          <img src="../media/icons/info.svg" alt="Menu" />
+          <div class="flip-container">
+            <div class="card-flip-animation">
+              <div class="front-flip">
+                <img src="../media/icons/info.svg" alt="Menu" />
+              </div>
+              <div class="back-flip">
+                <img class="back-flip-imagen" src="../media/icons/info-ligthMode.svg" alt="Menu" />
+              </div>
+            </div>
+          </div> 
           </button>
           
           </div>
