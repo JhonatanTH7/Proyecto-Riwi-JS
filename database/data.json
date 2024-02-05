@@ -32,7 +32,24 @@
       "id": "0004"
     }
   ],
-  "notification": [{ "title": "", "content": "" }],
+  "notification": [
+    {
+      "type": "alert",
+      "content": "sddqwdq"
+    },
+    {
+      "type": "caution",
+      "content": "sddqwdq"
+    },
+    {
+      "type": "info",
+      "content": "sddqwdq"
+    },
+    {
+      "type": "news",
+      "content": "sddqwdq"
+    }
+  ],
   "history": [
     {
       "from": "Medellìn",
@@ -40,7 +57,7 @@
       "start": "10:00",
       "end": "15:00",
       "date": "10/01/2023",
-      "km":"497"
+      "km": "497"
     }
   ]
 }
