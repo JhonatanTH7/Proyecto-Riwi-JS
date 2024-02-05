@@ -289,36 +289,82 @@ while (!header) {
             </div>
             `
     document.querySelector(".menu-left").innerHTML = `
-            <div class="offcanvas offcanvas-start menu-left" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
+          <div class="offcanvas offcanvas-start menu-left" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
             
             <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-            Offcanvas
-            </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             
             <div class="offcanvas-body">
-            <div>
-            Some text as placeholder. In real life you can have the elements
-            you have chosen. Like, text, images, lists, etc.
+              <div class="Item-menuLeft service">
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#service-Menu" aria-expanded="false" aria-controls="service-Menu">
+                    <div class="d-flex">
+                      <img src="../media/icons/service.svg" alt="Service-IconMenuLeft" />  
+                      <span>Service</span>
+                    </div>
+                    <img src="../media/icons/arrow down.png" class="arrow_down_dropdownMenu"/>
+                  </button>
+
+                <div class="collapse" id="service-Menu">
+                  <div class="card card-body">
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Update Road Status</a>
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Service Station, Availability and Price</a>
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Mechanic</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Item-menuLeft history">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#history" aria-expanded="false" aria-controls="history">
+                    <div class="d-flex">    
+                      <img src="../media/icons/map.svg" alt="Service-IconMenuLeft" />  
+                      <span>History</span>
+                    </div>
+                    <img src="../media/icons/arrow down.png" class="arrow_down_dropdownMenu"/>
+                </button>
+                
+                <div class="collapse" id="history">
+                  <div class="card card-body">
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Saved Maps</a>
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Map History</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Item-menuLeft your_Route">
+              <button class="btn d-flex" type="button">
+                <img src="../media/icons/route.svg" alt="Service-IconMenuLeft" />  
+                <a class="dropdown-item" href="#">Your Route</a>
+              </button>
+              </div>
+
+              <div class="Item-menuLeft your_Report">
+              <button class="btn d-flex" type="button">
+                <img src="../media/icons/report.svg" alt="Service-IconMenuLeft" />  
+                <a class="dropdown-item" href="#">Your Report</a> 
+              </button>
+              </div>
+
+              <div class="Item-menuLeft Setting">
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#setting" aria-expanded="false" aria-controls="setting">
+                    <div class="d-flex">
+                      <img src="../media/icons/settings.svg" alt="Service-IconMenuLeft" />  
+                      <span>Setting</span>
+                    </div>
+                    <img src="../media/icons/arrow down.png" class="arrow_down_dropdownMenu"/>
+                  </button>
+                
+                <div class="collapse" id="setting">
+                  <div class="card card-body">
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Action</a>
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Another action</a>
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Something else here</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            
-            <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-            <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
           </div>
-        </div>
-        </div>
 
         
         `
