@@ -39,18 +39,19 @@
 html,
 body {
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .menu-left {
-  margin-top: 18vh;
+  margin-top: 12vh;
   width: min-content !important;
   text-align: center;
 }
 
 .menu-left .offcanvas-body img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-right: 15px;
 }
 
@@ -84,6 +85,7 @@ body {
 .menu-left .offcanvas-body .Item-menuLeft span {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 .menu-left .offcanvas-header {
@@ -111,6 +113,20 @@ footer {
   background: var(--gray);
   height: 18vh;
   width: 100vw;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;    
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;      
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--green);    
+  border-radius: 20px;      
+  border: 3px solid transparent; 
 }
 
 /* ORDER

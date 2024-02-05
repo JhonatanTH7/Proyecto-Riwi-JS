@@ -4,7 +4,7 @@ body {
   background: var(--backgorundGray);
 }
 .notification {
-  position: absolute;
+  /* position: absolute; */
   background: white;
   width: 440px;
   height: 570px;
@@ -17,10 +17,17 @@ body {
   overflow-y: scroll;
 }
 
+.notification h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
 .notification_Title h1 {
   display: flex;
   justify-content: center;
   padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .notification_CautionOrange {
@@ -28,6 +35,7 @@ body {
   height: 300px;
   display: flex;
   flex-direction: column;
+  margin: auto;
   border-radius: 10px;
   border: 2px solid var(--orange);
   box-shadow: 0px 2px 10px var(--orange);
@@ -37,6 +45,8 @@ body {
   height: 300px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: auto;
   border-radius: 10px;
   border: 2px solid var(--magenta);
   box-shadow: 0px 2px 10px var(--magenta);
@@ -46,6 +56,7 @@ body {
   height: 300px;
   display: flex;
   flex-direction: column;
+  margin: auto;
   border-radius: 10px;
   border: 2px solid var(--cyan);
   box-shadow: 0px 2px 10px var(--cyan);
@@ -55,6 +66,7 @@ body {
   height: 300px;
   display: flex;
   flex-direction: column;
+  margin: auto;
   border-radius: 10px;
   border: 2px solid var(--purple);
   box-shadow: 0px 2px 10px var(--purple);
@@ -63,7 +75,6 @@ body {
   width: 100%;
   height: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -119,12 +130,14 @@ body {
 .notification_AlertMagenta_icon,
 .notification_InfoCyan_icon,
 .notification_NewsPurple_icon {
-  height: 30px;
+  height: 20px;
 }
 
 .notification_Content {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   text-align: center;
   padding: 10px;
+  width: 100%;
+  border-radius: 10px;
 }

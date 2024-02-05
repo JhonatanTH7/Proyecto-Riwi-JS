@@ -226,7 +226,7 @@ while (!header) {
                         id="password"
                         class="signIn_Form_password"
                         type="password"
-                        placeholder="******"
+                        placeholder="********"
                         required
                       />
                       <img
