@@ -11,12 +11,12 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid magenta;
+  border: 2px solid var(--magenta);
 }
 
 .signIn_Title {
   font-size: 120px;
-  font-weight: bold ;
+  font-weight: bold;
   text-align: center;
   padding: 20px;
 }
