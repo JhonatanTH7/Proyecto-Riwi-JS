@@ -458,13 +458,16 @@ while (!header) {
                 
                 <div class="collapse" id="setting">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#languaje" aria-expanded="false" aria-controls="languaje"><span class="itemList">-</span> Idioma</a>
+                    <a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#languaje" aria-expanded="false" aria-controls="languaje"><span class="itemList">-</span> Idioma
+                    <img src="../media/icons/arrow down.png" class="arrow_down_dropdownMenu"/>
+                    </a>
                     <div class="collapse" id="languaje">
                     <a class="dropdown-item" href="index_es.html"
                     ><img
                     src="../media/icons/Spain-Flag.png"
                     class="navBar_languageDropdown_flag"
                     />
+                    
                     <p
                     class="d-flex justify-content-center align-content-center m-0"
                     >
