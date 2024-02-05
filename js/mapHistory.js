@@ -1,13 +1,15 @@
 // Selectors
 const containerCards = document.querySelector(".containerCards");
+const inputFilterSince = document.getElementById("filterSinceDate");
+const inputFilterTo = document.getElementById("filterToDate");
+const filterContent = document.querySelector(".filterContent");
+const URLHistoryPage = "http://localhost:3000/history";
 
 // Functions
 async function getdata() {
-  const URL = "http://localhost:3000/history";
-  const respuesta = await fetch(URL);
+  const respuesta = await fetch(URLHistoryPage);
   const data = await respuesta.json();
   drawHistory(data);
-  detectStars();
 }
 
 function drawHistory(history) {
@@ -63,6 +65,7 @@ function drawHistory(history) {
                   </div>
                   `;
   });
+  detectStars();
 }
 
 function detectStars() {
@@ -76,5 +79,26 @@ function detectStars() {
     });
   });
 }
+
+function cleanHistory() {
+  while (containerCards.firstChild) {
+    containerCards.removeChild(containerCards.firstChild);
+  }
+}
+
+// Events
+filterContent.addEventListener("input", async () => {
+  cleanHistory();
+  const respuesta = await fetch(URLHistoryPage);
+  let data = await respuesta.json();
+  console.log(new Date().toLocaleDateString());
+  data = data.filter(
+    (record) =>
+      inputFilterSince.value <= record.date &&
+      inputFilterTo.value >= record.date
+  );
+  console.log(data);
+  drawHistory(data);
+});
 
 getdata();
