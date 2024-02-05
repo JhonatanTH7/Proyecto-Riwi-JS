@@ -32,5 +32,15 @@
       "id": "0004"
     }
   ],
-  "notification": [{ "title": "", "content": "" }]
+  "notification": [{ "title": "", "content": "" }],
+  "history": [
+    {
+      "from": "Medellìn",
+      "to": "Coveñas",
+      "start": "10:00",
+      "end": "15:00",
+      "date": "10/01/2023",
+      "km":"497"
+    }
+  ]
 }
