@@ -1,3 +1,9 @@
+let sceneMode = "1754f80e7e6644e28ce0c4d35066e392";
+
+if(localStorage.getItem("darkMode")){
+  sceneMode = "8a4efa2c20484ec9b4557895e65736ff"
+}
+
 require(["esri/config", "esri/Map", "esri/Basemap", "esri/views/SceneView", "esri/layers/RouteLayer",
   "esri/widgets/Directions", "esri/widgets/Search", "esri/widgets/Locate"],
   function (esriConfig, Map, Basemap, SceneView, RouteLayer, Directions, Search, Locate) {
@@ -7,10 +13,10 @@ require(["esri/config", "esri/Map", "esri/Basemap", "esri/views/SceneView", "esr
     const routeLayer = new RouteLayer();
 
     /* streets, imagery, navigation, topography, light gray canvas, o outdoors */
-    const scene = new Map({
+    let scene = new Map({
       basemap: new Basemap({
         portalItem: {
-          id: "1754f80e7e6644e28ce0c4d35066e392" // References the 3D Topographic Basemap
+          id: sceneMode// References the 3D Topographic Basemap
         }
       }),
       ground: "world-elevation",

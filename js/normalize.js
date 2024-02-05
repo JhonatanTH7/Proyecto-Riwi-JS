@@ -352,9 +352,13 @@ while (!header) {
                 
                 <div class="collapse" id="setting">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Action</a>
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Another action</a>
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Something else here</a>
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Language</a>
+                    <a class="dropdown-item" href="#"><span class="itemList">-</span> 
+                    <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input inputDarkMode" type="checkbox" id="flexSwitchCheckReverse">
+                    <label class="form-check-label" for="flexSwitchCheckReverse"> Dark Mode</label>
+                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
