@@ -35,6 +35,10 @@
   padding-bottom: 10px;
 }
 
+.filterSection {
+  width: 20%;
+}
+
 .filterContent {
   border: 1px solid var(--magenta);
   border-radius: 10px;
@@ -50,6 +54,16 @@
   padding-right: 10px;
   height: 40px;
   width: 150px;
+}
+
+.containerCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  overflow-y: scroll;
+  width: 80%;
 }
 
 .star {

@@ -42,7 +42,7 @@
         <h2>Map history</h2>
       </div>
       <div class="mapHistory_bottomContent h-75">
-        <div class="w-25">
+        <div class="filterSection">
           <button
             class="btn d-flex align-items-end btnFilter"
             type="button"
@@ -70,56 +70,7 @@
             </li>
           </ul>
         </div>
-        <div class="overflow-y-scroll w-75 d-flex gap-3 flex-wrap">
-          <div class="card">
-            <div class="text-end">
-              <img
-                src="../../media/icons/star gray.svg"
-                class="star"
-                alt="star"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="../../media/icons/img_card.jpg"
-                class="card-img-top"
-                alt="route img"
-              />
-            </div>
-            <div class="card-body">
-              <div>
-                <div>
-                  <label for="from">From:</label>
-                  <input type="text" id="from" value="Medellín" disabled />
-                </div>
-                <div>
-                  <label for="to">To:</label>
-                  <input type="text" id="to" value="Coveñas" disabled />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <label for="startTime">Start:</label>
-                  <input type="text" id="startTime" value="10:00" disabled />
-                </div>
-                <div>
-                  <label for="endTime">End:</label>
-                  <input type="text" id="endTime" value="15:00" disabled />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <label for="date">Date:</label>
-                  <input type="text" id="date" value="10/01/2023" disabled />
-                </div>
-                <div>
-                  <label for="end">Km:</label>
-                  <input type="text" id="end" value="497" disabled />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="containerCards"></div>
       </div>
     </section>
 
