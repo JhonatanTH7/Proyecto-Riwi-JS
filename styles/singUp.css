@@ -4,15 +4,31 @@ body {
   background: var(--backgorundGray);
 }
 
+.containerSignUp {
+  width: 100vw;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
 .signUp {
   position: absolute;
   background: white;
-  width: 440px;
-  height: 570px;
+  width: 460px;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+<<<<<<< HEAD
+  border: 2px solid var(--magenta);
+=======
   border: 2px solid magenta;
+  overflow-y: scroll;
+}
+
+.signUp p, .signUp label, .signUp h1{
+  margin: 0;
+>>>>>>> fe2f52fc4685876ca4d989fba3dccbd2d36e633f
 }
 
 .signUp_Title {
