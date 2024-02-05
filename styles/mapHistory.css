@@ -52,29 +52,43 @@
   width: 150px;
 }
 
-.mapHistory_card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--magenta);
-  border-radius: 10px;
-  height: max-content;
-  width: 300px;
-  padding: 8px;
-}
-
 .star {
-  height: 25px;
-}
-
-.star:hover {
-  background: yellow;
-}
-
-.mapHistory_card p {
-  margin: 0;
+  height: 22px;
+  margin: 7px;
 }
 
 .card {
   width: 18rem;
+  border: 1px solid var(--magenta);
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.card-body div {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 2px;
+}
+
+.card-body input {
+  width: 80px;
+  border-radius: 10px;
+  background: var(--backInputs);
+  border: none;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-img-top {
+  height: 150px;
+  width: 95%;
+  border-radius: 10px;
 }
