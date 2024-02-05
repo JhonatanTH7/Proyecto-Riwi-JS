@@ -32,5 +32,22 @@
       "id": "0004"
     }
   ],
-  "notification": [{ "title": "", "content": "" }]
+  "notification": [
+    {
+      "type": "alert",
+      "content": "sddqwdq"
+    },
+    {
+      "type": "caution",
+      "content": "sddqwdq"
+    },
+    {
+      "type": "info",
+      "content": "sddqwdq"
+    },
+    {
+      "type": "news",
+      "content": "sddqwdq"
+    }
+  ]
 }
