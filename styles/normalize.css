@@ -3,7 +3,7 @@
 @import "https://js.arcgis.com/4.28/@arcgis/core/assets/esri/themes/light/main.css";
 
 * {
-  font-family: "inter", sans-serif !important;
+  /* font-family: "inter", sans-serif !important; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;

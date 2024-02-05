@@ -29,10 +29,10 @@ while (!header) {
           </div>
           <!-- Logo -->
           <a href="index_${document.querySelector("html").lang}.html">
-          <img src="../media/icons/google.svg" alt="logo" />
+          <img class="icon-logo-index" src="../media/icons/logo_prueba2.png" alt="logo" />
           </a>
           <!-- Page name -->
-          <h6 class="m-0">Ruta 57</h6>
+          <!-- <h6 class="m-0">Ruta 57</h6> -->
           </div>
           
           <!-- Input search bar -->
