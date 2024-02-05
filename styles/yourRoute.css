@@ -1,0 +1,138 @@
+@import url(normalize.css);
+
+body {
+  background: var(--white);
+  width: 100vw;
+  height: 100vh;
+}
+
+.yourRoute {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.yourRoute_Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+}
+
+.yourRoute_Icon {
+  width: 60px;
+  height: 60px;
+}
+
+.yourRoute_Form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form,
+.yourRoute_Form_Option_Appriximate,
+.yourRoute_Form_Option_kilometers,
+.yourRoute_Form_Option_Toll,
+.yourRoute_Form_Option_Total {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.yourRoute_Form_Route,
+.yourRoute_Form_Information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.yourRoute_Form_Option_Route {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+.yourRoute_Form_Option_From {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.yourRoute_Form_Option_To {
+  display: flex;
+  gap: 20px;
+}
+
+.yourRoute_Form_Option_To label {
+  display: flex;
+  align-self: center;
+}
+
+.yourRoute_Form_Option_Select {
+  width: min-content;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.yourRoute_Form_Option_Vehicle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.yourRoute_Form_Info {
+  height: 10px;
+}
+
+.yourRoute_Form_Label_From,
+.yourRoute_Form_Label_To,
+.yourRoute_Form_Option_Category,
+.yourRoute_Form_Label_Appriximate,
+.yourRoute_Form_Label_kilometers,
+.yourRoute_Form_Label_Toll,
+.yourRoute_Form_Label_Total {
+  width: 230px;
+  height: 45px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  background: var(--backInputs);
+  border: none;
+  padding: 10px;
+}
+
+.yourRoute_Form_Option_Appriximate label,
+.yourRoute_Form_Option_kilometers label,
+.yourRoute_Form_Option_Toll label,
+.yourRoute_Form_Option_Total label {
+  display: flex;
+  align-items: center;
+}
+.yourRoute_Form_Option_Appriximate,
+.yourRoute_Form_Option_kilometers,
+.yourRoute_Form_Option_Toll,
+.yourRoute_Form_Option_Total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.yourRoute_Advisories {
+  display: flex;
+  padding: 30px;
+}
+
+.yourRoute_Advisories_counseling {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Road_Advisories_Icon {
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid var(--magenta);
+}
