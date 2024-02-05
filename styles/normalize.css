@@ -23,11 +23,9 @@
   --magenta: #d43347;
   --purple: #db50e2;
   --backInputs: #ede6d6;
-  --backbuttons: linear-gradient(
-    90deg,
-    rgba(255, 196, 67, 1) 0%,
-    rgba(255, 139, 56, 1) 100%
-  );
+  --backbuttons: linear-gradient(90deg,
+      rgba(255, 196, 67, 1) 0%,
+      rgba(255, 139, 56, 1) 100%);
   --backfooter: rgb(202, 194, 183, 70);
 }
 
@@ -38,7 +36,8 @@
   width: 100%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -49,35 +48,40 @@ html, body {
   text-align: center;
 }
 
-.menu-left img {
+.menu-left .offcanvas-body img {
   width: 40px;
   height: 40px;
   margin-right: 15px;
 }
 
-.menu-left .Item-menuLeft a {
+.menu-left .offcanvas-body .Item-menuLeft a {
   padding: 0;
   display: flex;
   align-items: center;
 }
 
-.menu-left .Item-menuLeft a:hover , .menu-left .Item-menuLeft span:hover {
+.menu-left .offcanvas-body .Item-menuLeft .collapse a:hover {
+  background: var(--backInputs);
+  border-radius: 10px;
+}
+
+.menu-left .offcanvas-body .Item-menuLeft button a:hover , .menu-left .offcanvas-body .Item-menuLeft button span:hover {
   font-weight: bold;
 }
 
-.menu-left .card-body {
+.menu-left .offcanvas-body .card-body {
   border: none;
 }
 
-.menu-left .arrow_down_dropdownMenu {
+.menu-left .offcanvas-body .arrow_down_dropdownMenu {
   margin: 0;
 }
 
-.menu-left .itemCollap {
+.menu-left .offcanvas-body .itemCollap {
   background: var(--backInputs);
 }
 
-.menu-left .Item-menuLeft span {
+.menu-left .offcanvas-body .Item-menuLeft span {
   display: flex;
   align-items: center;
 }
@@ -87,12 +91,12 @@ html, body {
   justify-content: end;
 }
 
-.menu-left .itemList {
+.menu-left .offcanvas-body .itemList {
   font-size: 30px;
   color: var(--green);
 }
 
-.menu-left .Item-menuLeft button {
+.menu-left .offcanvas-body .Item-menuLeft button {
   width: 100%;
   display: flex;
   justify-content: space-between;

@@ -291,10 +291,6 @@ while (!header) {
     document.querySelector(".menu-left").innerHTML = `
           <div class="offcanvas offcanvas-start menu-left" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
             
-            <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            
             <div class="offcanvas-body">
               <div class="Item-menuLeft service">
                   <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#service-Menu" aria-expanded="false" aria-controls="service-Menu">
