@@ -54,7 +54,6 @@ function showAlert(msg) {
     icon: "error",
     showConfirmButton: false,
     timer: 4000,
-    toast: "true",
     position: "bottom-right",
   });
 }

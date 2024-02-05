@@ -46,15 +46,15 @@ require(["esri/config", "esri/Map", "esri/Basemap", "esri/views/SceneView", "esr
       position: "top-right"
     });
 
-    // const locate = new Locate({
-    //   view: view,
-    //   useHeadingEnabled: false,
-    //   goToOverride: function (view, options) {
-    //     options.target.scale = 1500;
-    //     return view.goTo(options.target);
-    //   }
-    // });
-    // view.ui.add(locate, "top-left");
+    const locate = new Locate({
+      view: view,
+      useHeadingEnabled: false,
+      goToOverride: function (view, options) {
+        options.target.scale = 1500;
+        return view.goTo(options.target);
+      }
+    });
+    view.ui.add(locate, "top-left");
 
     // const searchWidget = new Search({
     //   view: view

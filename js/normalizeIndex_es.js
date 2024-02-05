@@ -105,7 +105,10 @@ while (!header) {
             data-bs-toggle="dropdown"
             aria-expanded="false"
             >
+            <div class="bellIcon">
             <img src="../media/icons/notification.svg" alt="Bell" />
+            <span class="contadorNoti"></span>
+            </div>
             <img
             src="../media/icons/arrow down.png"
             class="arrow_down_dropdownMenu"
@@ -120,7 +123,7 @@ while (!header) {
             <div class="notification_CautionOrange">
               <div class="notification_Caution_Title">
                 <img
-                  src="../../media/icons/alert orange.svg"
+                  src="../../media/icons/alert_Caution.svg"
                   alt="Alert orange"
                   class="notification_CautionOrange_icon"
                 />
@@ -500,9 +503,8 @@ while (!header) {
 
             </div>
           </div>
-
-        
         `
+
   } else {
     document.body.prepend(document.createElement("header"))
   }
