@@ -182,3 +182,31 @@ header {
     display: none;
   }
 }
+
+
+/* preloader */
+.preloader {
+  background: var(--gray);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader_gif {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif_preloader {
+  z-index: 3000;
+}

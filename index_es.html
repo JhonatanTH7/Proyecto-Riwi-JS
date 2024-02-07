@@ -31,16 +31,19 @@
 </head>
 
 <body>
-  <div id="viewDiv"></div>
+  <div class="preloader">
+    <div id="preloader_gif">
+      <video width="300" height="300" autoplay>
+        <source autoplay id="gif_preloader" src="media/gifs/gif_preloader.webm" type="video/webm">
+      </video>
+    </div>
+  </div>
+  <!-- <div id="viewDiv"></div> -->
   <div class="notification-Emerg" id="">
     <div class="notification_CautionOrange" id="box_Alert_event">
       <div class="notification_Caution_Title" id="box_Alert_title">
-        <img
-          src="/media/icons/alert_Caution.svg"
-          alt="Alert orange"
-          class="notification_CautionOrange_icon"
-          id="imagen_box_Alert"
-        />
+        <img src="/media/icons/alert_Caution.svg" alt="Alert orange" class="notification_CautionOrange_icon"
+          id="imagen_box_Alert" />
         <h3 class="notification_Type" id="title_box_Alert_event">CAUTION</h3>
       </div>
       <div class="notification_Content">
