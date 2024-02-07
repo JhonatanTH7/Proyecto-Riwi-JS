@@ -5,13 +5,24 @@ body {
 }
 .signIn {
   position: absolute;
-  background: white;
+  /* background: white; */
   width: 100%;
   height: 570px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   border: 2px solid var(--magenta);
+}
+
+.darkmode_singIn {
+  background-color: rgb(27, 27, 27);
+}
+.signIn_Subtitle_darkmode {
+  margin-left: 1%;
+  font-size: 16px;
+  width: 70%;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .signIn_Title h1 {
