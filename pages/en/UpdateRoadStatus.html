@@ -1,97 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Update Road Status</title>
-    <link rel="stylesheet" href="../../styles/UpdateRoadStatus.css" />
-  </head>
-  <body>
-  <div id="viewDiv"></div>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="media/icons/" type="image/x-icon">
+  <title>rofi</title>
+
+  <!-- Css Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Js Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/header.css">
+  <link rel="stylesheet" href="../../styles/signIn.css">
+  <link rel="stylesheet" href="../../styles/notification.css">
+</head>
+
+<body>
   <div class="notification-Emerg" id="">
     <div class="notification_CautionOrange" id="box_Alert_event">
       <div class="notification_Caution_Title" id="box_Alert_title">
         <img
-          src="../../media/icons/notification.svg"
-          class="UpdateRoadStatus_notificacion_icon"
-          alt="notification"
+          src="/media/icons/alert_Caution.svg"
+          alt="Alert orange"
+          class="notification_CautionOrange_icon"
+          id="imagen_box_Alert"
         />
-        <h1>Update Road Status</h1>
+        <h3 class="notification_Type" id="title_box_Alert_event">CAUTION</h3>
       </div>
+      <div class="notification_Content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+          inventore voluptas optio porro ullam magnam nobis natus quisquam?
+          Reprehenderit modi iusto quaerat excepturi deleniti labore harum
+          dolor dicta rem impedit.
+        </p>
+      </div>
+    </div>
+  </div>
 
-      <div class="UpdateRoadStatus_CautionOrange">
-        <div class="UpdateRoadStatus_Caution_Title">
-          <img
-            src="../../media/icons/alert_Caution.svg"
-            alt="Alert orange"
-            class="UpdateRoadStatus_CautionOrange_icon"
-          />
-          <h3 class="UpdateRoadStatus_Type">CAUTION</h3>
-        </div>
-        <div class="UpdateRoadStatus_Content">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-            inventore voluptas optio porro ullam magnam nobis natus quisquam?
-            Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-            dolor dicta rem impedit.
-          </p>
-        </div>
-      </div>
+  <div class="container-notification">
 
-      <div class="UpdateRoadStatus_AlertMagenta">
-        <div class="UpdateRoadStatus_Alert_Title">
-          <img
-            src="../../media/icons/alert magenta.svg"
-            alt="Alert magenta"
-            class="UpdateRoadStatus_AlertMagenta_icon"
-          />
-          <h3 class="UpdateRoadStatus_Type">ALERT</h3>
-        </div>
-        <div class="UpdateRoadStatus_Content">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-            inventore voluptas optio porro ullam magnam nobis natus quisquam?
-            Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-            dolor dicta rem impedit.
-          </p>
-        </div>
-      </div>
-      <div class="UpdateRoadStatus_InfoCyan">
-        <div class="UpdateRoadStatus_Information_Title">
-          <img
-            src="../../media/icons/alert cyan.svg"
-            alt="Alert cyan"
-            class="UpdateRoadStatus_InfoCyan_icon"
-          />
-          <h3 class="UpdateRoadStatus_Type">INFORMATION</h3>
-        </div>
-        <div class="UpdateRoadStatus_Content">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-            inventore voluptas optio porro ullam magnam nobis natus quisquam?
-            Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-            dolor dicta rem impedit.
-          </p>
-        </div>
-      </div>
-      <div class="UpdateRoadStatus_NewsPurple">
-        <div class="UpdateRoadStatus_News_Title">
-          <img
-            src="../../media/icons/alert purple.svg"
-            alt="Alert purple"
-            class="UpdateRoadStatus_NewsPurple_icon"
-          />
-          <h3 class="UpdateRoadStatus_Type">NEWS</h3>
-        </div>
-        <div class="UpdateRoadStatus_Content">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-            inventore voluptas optio porro ullam magnam nobis natus quisquam?
-            Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-            dolor dicta rem impedit.
-          </p>
-        </div>
-      </div>
-    </section>
-  </body>
+  </div>
+
+
+  <!-- SCRIPTS -->
+  <!-- Skeleton - Normalize -->
+  <script src="../../js/normalizePages_en.js"></script>
+
+  <!-- Js sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
+  <script src="../../js/header.js"></script>
+  <script src="../../js/signIn.js"></script>
+  <script src="../../js/darkMode.js"></script>
+  <script src="../../js/notification.js"></script>
+  <script src="../../js/updateRoadStatus.js"></script>
+</body>
+
 </html>
