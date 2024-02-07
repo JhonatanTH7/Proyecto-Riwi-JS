@@ -1,6 +1,8 @@
+/* selector */
 const notification_Emerg = document.querySelector(".notification-Emerg")
 const bellIcon = document.querySelector(".bellIcon")
 const bellNoti = document.querySelector(".contadorNoti")
+const container_noti_noSee = document.querySelector(".container_noti_noSee")
 let contadorNoti = 0;
 
 function alertaNoti(tipoAlerta) {
@@ -76,6 +78,7 @@ function alertaNoti(tipoAlerta) {
         contadorNoti++
 
         bellNoti.textContent = contadorNoti
+        container_noti_noSee.innerHTML += notification_Emerg.innerHTML;
 
     }, 9000);
 }
@@ -85,7 +88,7 @@ bellIcon.addEventListener("click", () => {
     bellNoti.textContent = contadorNoti;
 })
 
-
+/* function for random alerts */
 setInterval(() => {
     const type = ["alert", "news", "info", "caution"]
     alertaNoti(type[Math.floor(Math.random()*4)])

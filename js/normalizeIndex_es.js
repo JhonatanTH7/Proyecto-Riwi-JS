@@ -116,83 +116,9 @@ while (!header) {
             </button>
             <ul class="dropdown-menu">
             <li>
-            <div class="notification">
-            <div class="notification_Title">
-              <h1>Notificaciones</h1>
-            </div>
-            <div class="notification_CautionOrange">
-              <div class="notification_Caution_Title">
-                <img
-                  src="../../media/icons/alert_Caution.svg"
-                  alt="Alert orange"
-                  class="notification_CautionOrange_icon"
-                />
-                <h3 class="notification_Type">Peligro</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-            <div class="notification_AlertMagenta">
-              <div class="notification_Alert_Title">
-                <img
-                  src="../../media/icons/alert magenta.svg"
-                  alt="Alert magenta"
-                  class="notification_AlertMagenta_icon"
-                />
-                <h3 class="notification_Type">Advertencia</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-            <div class="notification_InfoCyan">
-              <div class="notification_Information_Title">
-                <img
-                  src="../../media/icons/alert cyan.svg"
-                  alt="Alert cyan"
-                  class="notification_InfoCyan_icon"
-                />
-                <h3 class="notification_Type">Información</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-            <div class="notification_NewsPurple">
-              <div class="notification_News_Title">
-                <img
-                  src="../../media/icons/alert purple.svg"
-                  alt="Alert purple"
-                  class="notification_NewsPurple_icon"
-                />
-                <h3 class="notification_Type">Novedades</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-          </div>
+            <section class="notification container_noti_noSee">
+                <p class="notification_Title"> No hay notificaciones pendientes </p>
+            </section>
             </li>
               </ul>
             </li>

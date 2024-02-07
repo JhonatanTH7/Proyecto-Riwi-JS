@@ -3,12 +3,13 @@ const containerCards = document.querySelector(".containerCards");
 const inputFilterSince = document.getElementById("filterSinceDate");
 const inputFilterTo = document.getElementById("filterToDate");
 const filterContent = document.querySelector(".filterContent");
-const URLHistoryPage = "http://localhost:3000/history";
+const URLHistoryPage = "https://jhonatanth7.github.io/database/data.json";
 
 // Functions
 async function getdata() {
   const respuesta = await fetch(URLHistoryPage);
   const data = await respuesta.json();
+  console.log(data);
   drawHistory(data);
 }
 
