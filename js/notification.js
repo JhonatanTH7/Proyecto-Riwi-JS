@@ -13,39 +13,63 @@ function alertaNoti(tipoAlerta) {
 
     switch (tipoAlerta) {
         case "caution":
-            box_Alert_event = notification_CautionOrange
-            box_Alert_title = notification_Caution_Title
-            imagen_box_Alert.src =  notification_CautionOrange_icon
-            title_box_Alert_event.textContent =
-            notification_Content = 
+            box_Alert_event.classList = "notification_CautionOrange"
+            box_Alert_title.classList = "notification_Caution_Title"
+            imagen_box_Alert.src =  "media/icons/alert_Caution.svg"
+
+            if(document.querySelector("html").lang == "es") {
+                title_box_Alert_event.textContent = "precaución"
+                notification_Content = "Aqui va una descripcion del la alerta"
+            } else {
+                title_box_Alert_event.textContent = 
+                notification_Content = "Here is a description of the alert"
+            }
             break;
 
         case "alert":
-            box_Alert_event = notification_AlertMagenta
-            box_Alert_title = notification_Alert_Title
-            imagen_box_Alert = notification_AlertMagenta_icon
-            title_box_Alert_event.textContent =
-            notification_Content = 
+            box_Alert_event.classList = "notification_AlertMagenta"
+            box_Alert_title.classList = "notification_Alert_Title"
+            imagen_box_Alert.src = "media/icons/alert magenta.svg"
+            
+            if(document.querySelector("html").lang == "es") {
+                title_box_Alert_event.textContent = "alerta"
+                notification_Content = "Aqui va una descripcion del la alerta"
+            } else {
+                title_box_Alert_event.textContent = "alert"
+                notification_Content = "Here is a description of the alert"
+            }
             break;
 
         case "info":
-            box_Alert_event = notification_InfoCyan
-            box_Alert_title = notification_Information_Title
-            imagen_box_Alert = notification_InfoCyan_icon
-            title_box_Alert_event.textContent = 
-            notification_Content = 
+            box_Alert_event.classList = "notification_InfoCyan"
+            box_Alert_title.classList = "notification_Information_Title"
+            imagen_box_Alert.src = "media/icons/alert cyan.svg"
+            
+            if(document.querySelector("html").lang == "es") {
+                title_box_Alert_event.textContent = "información"
+                notification_Content = "Aqui va una descripcion del la alerta"
+            } else {
+                title_box_Alert_event.textContent = "info"
+                notification_Content = "Here is a description of the alert"
+            }
             break;
 
         case "news":
-            box_Alert_event = notification_NewsPurple
-            box_Alert_title = notification_News_Title
-            imagen_box_Alert = notification_NewsPurple_icon
-            title_box_Alert_event.textContent =
-            notification_Content = 
+            box_Alert_event.classList = "notification_NewsPurple"
+            box_Alert_title.classList = "notification_News_Title"
+            imagen_box_Alert.src = "media/icons/alert purple.svg"
+            
+            if(document.querySelector("html").lang == "es") {
+                title_box_Alert_event.textContent = "novedades"
+                notification_Content = "Aqui va una descripcion del la alerta"
+            } else {
+                title_box_Alert_event.textContent = "news"
+                notification_Content = "Here is a description of the alert"
+            }
             break;
     }
 
-    notification_Emerg.id = "animationNoti"
+    notification_Emerg.id = "animation"
 
     setTimeout(() => {
         notification_Emerg.id = ""
@@ -53,7 +77,7 @@ function alertaNoti(tipoAlerta) {
 
         bellNoti.textContent = contadorNoti
 
-    }, 10000);
+    }, 9000);
 }
 
 bellIcon.addEventListener("click", () => {
@@ -61,4 +85,9 @@ bellIcon.addEventListener("click", () => {
     bellNoti.textContent = contadorNoti;
 })
 
-alertaNoti("news")
+
+setInterval(() => {
+    const type = ["alert", "news", "info", "caution"]
+    alertaNoti(type[Math.floor(Math.random()*4)])
+}, 30000);
+

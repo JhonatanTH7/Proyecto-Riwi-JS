@@ -47,7 +47,6 @@ body {
   height: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: auto;
   border-radius: 10px;
   border-bottom: 2px solid var(--magenta);
@@ -94,7 +93,6 @@ body {
   width: 100%;
   height: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -109,7 +107,6 @@ body {
   width: 100%;
   height: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -124,7 +121,6 @@ body {
   width: 100%;
   height: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -160,13 +156,13 @@ body {
 }
 
 #animation {
-  animation: alertShow 10s linear 0s;
+  animation: alertShow 9s linear 0s;
 }
 
 .notification-Emerg .notification_CautionOrange,
-.notification-Emerg .notification_AlertMagenta_icon,
-.notification-Emerg .notification_InfoCyan_icon,
-.notification-Emerg .notification_NewsPurple_icon {
+.notification-Emerg .notification_AlertMagenta,
+.notification-Emerg .notification_InfoCyan,
+.notification-Emerg .notification_NewsPurple{
   height: 50px;
   overflow: hidden;
   background: var(--white);
@@ -179,8 +175,8 @@ body {
 
 .notification-Emerg:hover .notification_CautionOrange,
 .notification-Emerg:hover .notification_AlertMagenta_icon,
-.notification-Emerg:hover .notification_InfoCyan_icon,
-.notification-Emerg:hover .notification_NewsPurple_icon {
+.notification-Emerg:hover .notification_InfoCyan,
+.notification-Emerg:hover .notification_NewsPurple {
   height: 50px;
   overflow: none;
   height: max-content;

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="media/icons/Icon-favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="media/icons/" type="image/x-icon">
   <title>rofi</title>
 
   <!-- Css Bootstrap -->
@@ -16,37 +16,23 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-  <!-- Css Map Arcgis -->
-  <link rel="stylesheet" href="styles/map.css">
-  <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
-  <!-- Js Map Arcgis -->
-  <script src="https://js.arcgis.com/4.28/"></script>
-  <script src="js/map.js"></script>
-
   <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
-  <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="stylesheet" href="/styles/header.css">
-  <link rel="stylesheet" href="/styles/signIn.css">
-  <link rel="stylesheet" href="styles/notification.css">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/header.css">
+  <link rel="stylesheet" href="../../styles/signIn.css">
+  <link rel="stylesheet" href="../../styles/notification.css">
 </head>
 
 <body>
-  <!-- Preloader -->
-  <div class="preloader">
-    <div id="preloader_gif">
-      <img src="media/gifs/gif_ojosnegros.gif" width="100%">
-    </div>
-  </div>
-
-  <!-- map -->
-  <div id="viewDiv"></div>
-
-  <!-- alert -->
   <div class="notification-Emerg" id="">
     <div class="notification_CautionOrange" id="box_Alert_event">
       <div class="notification_Caution_Title" id="box_Alert_title">
-        <img src="/media/icons/alert_Caution.svg" alt="Alert orange" class="notification_CautionOrange_icon"
-          id="imagen_box_Alert" />
+        <img
+          src="/media/icons/alert_Caution.svg"
+          alt="Alert orange"
+          class="notification_CautionOrange_icon"
+          id="imagen_box_Alert"
+        />
         <h3 class="notification_Type" id="title_box_Alert_event">CAUTION</h3>
       </div>
       <div class="notification_Content">
@@ -60,18 +46,24 @@
     </div>
   </div>
 
+  <div class="container-notification">
+
+  </div>
+
+
   <!-- SCRIPTS -->
   <!-- Skeleton - Normalize -->
-  <script src="js/normalizeIndex_es.js"></script>
+  <script src="../../js/normalizePages_en.js"></script>
 
   <!-- Js sweetalert -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
-  <script src="js/header.js"></script>
-  <script src="js/signIn.js"></script>
-  <script src="js/darkMode.js"></script>
-  <script src="js/notification.js"></script>
+  <script src="../../js/header.js"></script>
+  <script src="../../js/signIn.js"></script>
+  <script src="../../js/darkMode.js"></script>
+  <script src="../../js/notification.js"></script>
+  <script src="../../js/updateRoadStatus.js"></script>
 </body>
 
 </html>

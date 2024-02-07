@@ -38,7 +38,7 @@ while (!header) {
           </div>
           <!-- Logo -->
           <a href="index_${document.querySelector("html").lang}.html">
-          <img class="icon-logo-index" src="../media/icons/logo_prueba2.png" alt="logo" />
+          <img class="icon-logo-index" src="../media/icons/logo_final_ligthmode.svg" alt="logo" />
           </a>
           <!-- Page name -->
           <!-- <h6 class="m-0">Ruta 57</h6> -->
@@ -412,9 +412,9 @@ while (!header) {
 
                 <div class="collapse" id="service-Menu">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/notification.html"><span class="itemList">-</span> Noticias en la vía</a>
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Estación de Servicio, Disponibilidad y Precio</a>
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Mecánica</a>
+                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/updateRoadStatus.html"><span class="itemList">-</span> Estado de la Carretera</a>
+                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/gasStation.html"><span class="itemList">-</span> Estación de Servicio, Disponibilidad y Precio</a>
+                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/mechanic.html"><span class="itemList">-</span> Mecánica</a>
                   </div>
                 </div>
               </div>

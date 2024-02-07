@@ -7,7 +7,7 @@ const preloader = document.querySelector(".preloader")
 /* event flip-menu */
 if (localStorage.getItem("darkMode")) {
     const logo_darkMode = document.querySelector(".icon-logo-index");
-    logo_darkMode.src = "../media/icons/prueba-logo2-darkmode-removebg.png";
+    logo_darkMode.src = "../media/icons/logo_final_darkmode.svg";
 }
 
 card_flip_animation.addEventListener("click", () => {
@@ -22,6 +22,6 @@ card_flip_animation.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         preloader.remove()
-    }, 8000);
+    }, 7000);
 })
 

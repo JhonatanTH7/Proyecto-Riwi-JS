@@ -30,7 +30,7 @@ while (!header) {
           <!-- Logo -->
           <a href="../../index_${document.querySelector("html").lang}.html">
           <div class="container_Logo">
-          <img src="../../media/icons/logo.svg" alt="logo" class="logo"/>
+          <img src="../../media/icons/logo_final_ligthmode.svg" alt="logo" class="logo"/>
           </div>
 
           </a>
