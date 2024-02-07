@@ -20,9 +20,6 @@ function darkmodeactive(element) {
                         darkmodeactive(elementChild)
                     }
                 }
-                if(elementChild.id == "gif_preloader"){
-                    elementChild.play()
-                }
             } catch (error) {
                 console.log(error, elementChild);
             }
