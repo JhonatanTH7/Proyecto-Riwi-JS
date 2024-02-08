@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html lang="es" id="yourRoute">
+<html lang="en" id="yourRoute">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RUTA 57</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../media/icons/Icon-favicon.svg" type="image/x-icon">
+    <title>rofi</title>
 
     <!-- Css Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- Js Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Css Map Arcgis -->
-    <!-- <link rel="stylesheet" href="../../styles/map.css">
-    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css"> -->
-    <!-- Js Map Arcgis -->
-    <!-- <script src="https://js.arcgis.com/4.28/"></script>
-    <script src="../../js/map.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
     <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
-    <link rel="stylesheet" href="../../styles/normalize.css" />
-    <link rel="stylesheet" href="../../styles/header.css" />
-    <link rel="stylesheet" href="../../styles/signIn.css" />
-
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/signIn.css">
+    <link rel="stylesheet" href="../../styles/notification.css">
     <!-- Css yourRoute -->
     <link rel="stylesheet" href="../../styles/yourRoute.css" />
   </head>
@@ -44,7 +32,7 @@
           alt="Your Route"
           class="yourRoute_Icon"
         />
-        <h1 class="yourRoute_Text">YOUR ROUTE</h1>
+        <h1 class="yourRoute_Text">Your Route</h1>
       </div>
 
       <section class="yourRoute_Form">
@@ -58,31 +46,37 @@
                   class="yourRoute_Form_Label_From"
                   type="text"
                   name="From"
+                  disabled
                 />
               </div>
 
               <div class="yourRoute_Form_Option_To">
-                <label for="From">TO</label>
+                <label for="to">TO</label>
                 <input
-                  id="From"
+                  id="to"
                   class="yourRoute_Form_Label_To"
                   type="text"
                   name="to"
+                  disabled
                 />
               </div>
             </div>
 
             <div class="yourRoute_Form_Option_Select">
               <div class="yourRoute_Form_Option_Vehicle">
-                <label for="Vehicle">Vehicle type</label>
+                <label for="yourRoute_Form_Option_Category">Vehicle type</label>
                 <img
                   src="../../media/icons/info.svg"
                   alt="info"
                   class="yourRoute_Form_Info"
                 />
+                <img
+                  src="../../media/icons/categories.jpg"
+                  alt="categories"
+                  class="imgCategories d-none"
+                />
               </div>
               <select
-                name="Vehicle"
                 class="yourRoute_Form_Option_Category"
                 id="yourRoute_Form_Option_Category"
               >
@@ -104,8 +98,9 @@
               <input
                 id="Appriximate"
                 class="yourRoute_Form_Label_Appriximate"
-                type="number"
+                type="text"
                 name="Appriximate"
+                disabled
               />
             </div>
             <div class="yourRoute_Form_Option_kilometers">
@@ -115,24 +110,28 @@
                 class="yourRoute_Form_Label_kilometers"
                 type="number"
                 name="kilometers"
+                disabled
               />
             </div>
             <div class="yourRoute_Form_Option_Toll">
-              <label for="Toll"> Toll road: </label>
+              <label for="Toll_number"> #Toll: </label>
               <input
-                id="Toll_Road"
+                id="Toll_number"
                 class="yourRoute_Form_Label_Toll"
                 type="number"
                 name="Toll"
+                value="9"
+                disabled
               />
             </div>
             <div class="yourRoute_Form_Option_Total">
-              <label for="Total"> Total toll cost on this route: </label>
+              <label for="Total_toll"> Total toll cost on this route: </label>
               <input
                 id="Total_toll"
                 class="yourRoute_Form_Label_Total"
                 type="number"
                 name="Total"
+                disabled
               />
             </div>
           </div>
@@ -140,18 +139,31 @@
       </section>
       <section class="yourRoute_Advisories">
         <div class="yourRoute_Advisories_counseling">
-          <h2 class="Road_Advisories">Road Advisories</h2>
-          <img
-            src="../../media/icons/vinus.svg"
-            alt="concesion vial del nus"
-            class="Road_Advisories_Icon"
-          />
+          <h2 class="Road_Advisories fw-bold">Road Advisories</h2>
+          <div>
+            <div class="Road_Advisories_DropUp d-none">
+              <ul class="list-unstyled">
+                <li class="fw-bold text-center">Services</li>
+                <li>Ambulance</li>
+                <li>Crane</li>
+                <li>Trolley crane</li>
+              </ul>
+            </div>
+            <img
+              src="../../media/icons/vinus.svg"
+              alt="concesion vial del nus"
+              class="Road_Advisories_Icon dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            />
+          </div>
         </div>
       </section>
-    </div>
+    </div>}
+    
     <!-- SCRIPTS -->
     <!-- Skeleton - Normalize -->
-    <script src="../../js/normalizePages.js"></script>
+    <script src="../../js/normalizePages_en.js"></script>
 
     <!-- Js sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -159,5 +171,10 @@
     <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
     <script src="../../js/header.js"></script>
     <script src="../../js/signIn.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/notification.js"></script>
+
+    <!-- your Route -->
+    <script src="../../js/yourRoute.js"></script>
   </body>
 </html>

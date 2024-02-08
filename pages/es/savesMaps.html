@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" id="savesMaps">
+<html lang="en" id="savesMaps">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saved Maps</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../media/icons/Icon-favicon.svg" type="image/x-icon">
+    <title>rofi</title>
 
     <!-- Css Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,20 +15,13 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <!-- Css Map Arcgis -->
-    <!-- <link rel="stylesheet" href="../../styles/map.css">
-    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css"> -->
-    <!-- Js Map Arcgis -->
-    <!-- <script src="https://js.arcgis.com/4.28/"></script>
-    <script src="../../js/map.js"></script> -->
-
     <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/header.css">
     <link rel="stylesheet" href="../../styles/signIn.css">
-
+    <link rel="stylesheet" href="../../styles/notification.css">
     <!-- Css SavedMaps -->
-    <link rel="stylesheet" href="../../styles/savedMaps.css">
+    <link rel="stylesheet" href="../../styles/savedMaps.css" />
   </head>
 
   <body>
@@ -37,48 +32,55 @@
           alt="saved_Map"
           class="savedMaps_Icon"
         />
-        <h1 class="savedMaps_Text">Mapas Guardados</h1>
+        <h1 class="savedMaps_Text">Saved Maps</h1>
       </div>
-      <div class="savedMaps_Card">
-        <div class="savedMaps_Card_Icon">
-          <img
-            src="/media/icons/star yellow.svg"
-            alt="star_yellow"
-            class="savedMaps_Card_Icon_Star"
-          />
-        </div>
-        <div class="savedMaps_Card_From">
-          <img
-            src="/media/icons/location.svg"
-            alt="location"
-            class="savedMaps_Card_From_Icon"
-          />
-          <input
-            class="savedMaps_Card_From_Input"
-            type="text"
-            placeholder="Medellín"
-            disabled
-          />
-        </div>
-        <div class="savedMaps_Card_To">
-          <input
-            class="savedMaps_Card_To_Input"
-            type="text"
-            placeholder="Coveñas"
-            disabled
-          />
-        </div>
-        <div class="savedMaps_Card_Button">
-          <button class="savedMaps_Card_Button_Go" type="submit">
-            Ir
-          </button>
+      <div class="savedMaps_ContainerCards">
+        <div class="savedMaps_Card">
+          <div class="savedMaps_Card_Icon">
+            <img
+              src="/media/icons/star yellow.svg"
+              alt="star_yellow"
+              class="savedMaps_Card_Icon_Star"
+            />
+          </div>
+          <div class="savedMaps_Card_From">
+            <img
+              src="/media/icons/location.svg"
+              alt="location"
+              class="savedMaps_Card_From_Icon"
+            />
+            <input
+              class="savedMaps_Card_From_Input"
+              type="text"
+              placeholder="From"
+              disabled
+            />
+          </div>
+          <div class="savedMaps_Card_To">
+            <img
+              src="/media/icons/location.svg"
+              alt="location"
+              class="savedMaps_Card_To_Icon"
+            />
+            <input
+              class="savedMaps_Card_To_Input"
+              type="text"
+              placeholder="To"
+              disabled
+            />
+          </div>
+          <div class="savedMaps_Card_Button">
+            <button class="savedMaps_Card_Button_Go" type="submit">
+              GO BACK!
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- SCRIPTS -->
     <!-- Skeleton - Normalize -->
-    <script src="../../js/normalizePages.js"></script>
+    <script src="../../js/normalizePages_en.js"></script>
 
     <!-- Js sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -86,6 +88,8 @@
     <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
     <script src="../../js/header.js"></script>
     <script src="../../js/signIn.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/notification.js"></script>
   </body>
   <footer></footer>
 </html>

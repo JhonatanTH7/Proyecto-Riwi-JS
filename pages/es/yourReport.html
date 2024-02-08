@@ -1,79 +1,94 @@
 <!DOCTYPE html>
-<html lang="es" id="yourReport">
+<html lang="en" id="yourReport">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../media/icons/Icon-favicon.svg" type="image/x-icon">
+    <title>rofi</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Report</title>
+    <!-- Css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
-  <!-- Css Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <!-- Js Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/signIn.css">
+    <link rel="stylesheet" href="../../styles/notification.css">
 
-  <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
-  <link rel="stylesheet" href="../../styles/normalize.css">
-  <link rel="stylesheet" href="../../styles/header.css">
-  <link rel="stylesheet" href="../../styles/signIn.css">
+    <!-- Css YourReport -->
+    <link rel="stylesheet" href="../../styles/yourReport.css" />
+  </head>
 
-  <!-- Css YourReport -->
-  <link rel="stylesheet" href="../../styles/yourReport.css">
-</head>
-
-<body>
-  <section class="yourReport">
-    <form class="form_yourReport">
-      <div class="d-flex justify-content-center align-items-center gap-1">
-        <img src="../../media/icons/report.svg" />
-        <h2>Reporte</h2>
-      </div>
-      <div class="form_yourReport_content">
-        <div class="form_yourReport_column">
-          <div class="form_yourReport_content_divElement">
-            <label for="date">Día</label><input type="date" id="date" />
+  <body>
+    <section class="yourReport">
+      <form class="form_yourReport">
+        <div class="d-flex justify-content-center align-items-center gap-1">
+          <img src="../../media/icons/report.svg" alt="report icon" />
+          <h2>Your Report</h2>
+        </div>
+        <div class="form_yourReport_content">
+          <div class="form_yourReport_column">
+            <div class="form_yourReport_content_divElement">
+              <label for="date">Date</label
+              ><input type="date" id="date" required />
+            </div>
+            <div class="form_yourReport_content_divElement">
+              <label for="hour">Hour</label
+              ><input type="time" id="hour" required />
+            </div>
+            <div class="form_yourReport_content_divElement">
+              <label for="name">Name</label
+              ><input type="text" id="name" placeholder="John doe" required />
+            </div>
+            <div class="form_yourReport_content_divElement">
+              <label for="email">Email</label
+              ><input
+                type="email"
+                id="email"
+                placeholder="Johndoe@example.com"
+                required
+              />
+            </div>
           </div>
-          <div class="form_yourReport_content_divElement">
-            <label for="hour">Hora</label><input type="time" id="hour" />
-          </div>
-          <div class="form_yourReport_content_divElement">
-            <label for="name">Nombre</label><input type="text" id="name" placeholder="John doe" />
-          </div>
-          <div class="form_yourReport_content_divElement">
-            <label for="email">Correo Electrónico</label><input type="email" id="email"
-              placeholder="Johndoe@example.com" />
+          <div class="form_yourReport_column">
+            <div class="form_yourReport_content_divElement">
+              <label for="location">Location of report</label
+              ><input type="text" id="location" required />
+            </div>
+            <div class="form_yourReport_content_divElement">
+              <label for="details">Details</label>
+              <textarea id="details" cols="5" required></textarea>
+            </div>
           </div>
         </div>
-        <div class="form_yourReport_column">
-          <div class="form_yourReport_content_divElement">
-            <label for="email">Ubicación del reporte</label><input type="email" id="email" />
-          </div>
-          <div class="form_yourReport_content_divElement">
-            <label for="message">Detalles</label>
-            <textarea id="message" cols="5"></textarea>
-          </div>
+
+        <div class="form_yourReport_container_btnSubmit">
+          <button type="submit" class="btnYourReport">Send</button>
         </div>
-      </div>
+      </form>
+    </section>
+    <footer></footer>
 
-      <div class="form_yourReport_container_btnSubmit">
-        <button type="submit">Enviar</button>
-      </div>
-    </form>
-  </section>
-  <footer></footer>
+    <!-- SCRIPTS -->
+    <!-- Skeleton - Normalize -->
+    <script src="../../js/normalizePages_en.js"></script>
 
-  <!-- SCRIPTS -->
-  <!-- Skeleton - Normalize -->
-  <script src="../../js/normalizePages.js"></script>
+    <!-- Js sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <!-- Js sweetalert -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
+    <script src="../../js/header.js"></script>
+    <script src="../../js/signIn.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/notification.js"></script>
 
-  <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
-  <script src="../../js/header.js"></script>
-  <script src="../../js/signIn.js"></script>
-</body>
-
+    <!-- Js yourReport -->
+    <script src="../../js/yourReport.js"></script>
+  </body>
 </html>
