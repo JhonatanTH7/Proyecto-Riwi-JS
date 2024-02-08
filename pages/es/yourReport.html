@@ -30,20 +30,20 @@
       <form class="form_yourReport">
         <div class="d-flex justify-content-center align-items-center gap-1">
           <img src="../../media/icons/report.svg" alt="report icon" />
-          <h2>Your Report</h2>
+          <h2>Tu Reporte</h2>
         </div>
         <div class="form_yourReport_content">
           <div class="form_yourReport_column">
             <div class="form_yourReport_content_divElement">
-              <label for="date">Date</label
+              <label for="date">Fecha</label
               ><input type="date" id="date" required />
             </div>
             <div class="form_yourReport_content_divElement">
-              <label for="hour">Hour</label
+              <label for="hour">Hora</label
               ><input type="time" id="hour" required />
             </div>
             <div class="form_yourReport_content_divElement">
-              <label for="name">Name</label
+              <label for="name">Nombre</label
               ><input type="text" id="name" placeholder="John doe" required />
             </div>
             <div class="form_yourReport_content_divElement">
@@ -58,22 +58,40 @@
           </div>
           <div class="form_yourReport_column">
             <div class="form_yourReport_content_divElement">
-              <label for="location">Location of report</label
+              <label for="location">Ubicación del reporte</label
               ><input type="text" id="location" required />
             </div>
             <div class="form_yourReport_content_divElement">
-              <label for="details">Details</label>
+              <label for="details">Detalles</label>
               <textarea id="details" cols="5" required></textarea>
             </div>
           </div>
         </div>
 
         <div class="form_yourReport_container_btnSubmit">
-          <button type="submit" class="btnYourReport">Send</button>
+          <button type="submit" class="btnYourReport">Enviar</button>
         </div>
       </form>
     </section>
     <footer></footer>
+    <!-- alert -->
+  <div class="notification-Emerg" id="">
+    <div class="notification_CautionOrange" id="box_Alert_event">
+      <div class="notification_Caution_Title" id="box_Alert_title">
+        <img src="/media/icons/alert_Caution.svg" alt="Alert orange" class="notification_CautionOrange_icon"
+          id="imagen_box_Alert" />
+        <h3 class="notification_Type" id="title_box_Alert_event">CAUTION</h3>
+      </div>
+      <div class="notification_Content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+          inventore voluptas optio porro ullam magnam nobis natus quisquam?
+          Reprehenderit modi iusto quaerat excepturi deleniti labore harum
+          dolor dicta rem impedit.
+        </p>
+      </div>
+    </div>
+  </div>
 
     <!-- SCRIPTS -->
     <!-- Skeleton - Normalize -->
