@@ -1,7 +1,7 @@
 /* Selectors SingIN */
 const form_SignIn = document.getElementById("Form");
 const userName_SignIn = document.getElementById("Username");
-const userPassword_Signin = document.getElementById("password");
+const userPassword_Signin = document.getElementById("Password");
 const eye_Icon = document.getElementById("Eye_Icon");
 const eye_Icon_Show = document.getElementById("Eye_Icon_Show");
 
@@ -34,7 +34,7 @@ async function signIn() {
   console.log(data);
 
   if (!data.length) {
-    showAlert("Email not registered");
+    alert("Email not registered");
     return;
   }
 
