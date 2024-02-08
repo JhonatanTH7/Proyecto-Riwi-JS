@@ -2,12 +2,21 @@
   "users": [
     {
       "id": "369e",
-      "firtsName": "BFDFDFD",
-      "lastName": "FGHFHGFH",
-      "email": "DFNW@GMAAIL.COM",
-      "userName": "NASDKJQ",
-      "password": "32.3FWE2FSAA",
-      "NMobile": "245151561"
+      "firtsName": "Jhonatan",
+      "lastName": "Toro",
+      "email": "jhonatan@correo.com",
+      "userName": "jhon",
+      "password": "ContraseñaJhonatan",
+      "NMobile": "3226784358"
+    },
+    {
+      "id": "b9ae",
+      "firtsName": "Prueba",
+      "lastName": "1",
+      "email": "prueba@correo.com",
+      "userName": "prueba",
+      "password": "PruebaContraseña",
+      "NMobile": "3226784358"
     }
   ],
   "notification": [
@@ -34,6 +43,48 @@
   ],
   "history": [
     {
+      "from": "Cali",
+      "to": "Medellìn",
+      "start": "10:00",
+      "end": "19:00",
+      "date": "2022-06-06",
+      "km": "497",
+      "favorite": false,
+      "id": "b7cd"
+    },
+    {
+      "from": "Bucaramanchester",
+      "to": "Medellìn",
+      "start": "1:00",
+      "end": "12:00",
+      "date": "2022-06-06",
+      "km": "465",
+      "favorite": true,
+      "id": "c3b0",
+      "userId": "369e"
+    },
+    {
+      "from": "Coveñas",
+      "to": "Medellìn",
+      "start": "05:00",
+      "end": "14:00",
+      "date": "2023-06-06",
+      "km": "497",
+      "favorite": false,
+      "id": "05af"
+    },
+    {
+      "from": "Bogota",
+      "to": "Medellìn",
+      "start": "20:00",
+      "end": "05:00",
+      "date": "2023-05-04",
+      "km": "497",
+      "favorite": false,
+      "id": "8cde",
+      "userId": "369e"
+    },
+    {
       "from": "Medellìn",
       "to": "Cali",
       "start": "10:00",
@@ -41,7 +92,8 @@
       "date": "2022-06-06",
       "km": "497",
       "favorite": true,
-      "id": "b7cd"
+      "id": "b7cd",
+      "userId": "456a"
     },
     {
       "from": "Medellìn",
@@ -51,7 +103,8 @@
       "date": "2022-06-06",
       "km": "465",
       "favorite": true,
-      "id": "c3b0"
+      "id": "c3b0",
+      "userId": "456a"
     },
     {
       "from": "Medellìn",
@@ -61,7 +114,8 @@
       "date": "2023-06-06",
       "km": "497",
       "favorite": true,
-      "id": "05af"
+      "id": "05af",
+      "userId": "456a"
     },
     {
       "from": "Medellìn",
@@ -71,7 +125,8 @@
       "date": "2023-05-04",
       "km": "497",
       "favorite": false,
-      "id": "8cde"
+      "id": "8cde",
+      "userId": "456a"
     }
   ],
   "reports": [
