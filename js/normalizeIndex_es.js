@@ -3,13 +3,12 @@ let header;
 
 /* Skeleton */
 while (!header) {
-  header = document.querySelector("header")
+  header = document.querySelector("header");
 
   if (header) {
-
-    const menu_left = document.createElement("div")
-    menu_left.classList = "menu-left"
-    document.body.appendChild(menu_left)
+    const menu_left = document.createElement("div");
+    menu_left.classList = "menu-left";
+    document.body.appendChild(menu_left);
 
     header.innerHTML = `
     <!-- Left side icons -->
@@ -74,7 +73,9 @@ while (!header) {
             </button>
             <ul class="dropdown-menu">
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/aboutUs.html">
+            <a class="dropdown-item" href="/pages/${
+              document.querySelector("html").lang
+            }/aboutUs.html">
             <img src="../media/icons/about us.svg" alt="icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
@@ -84,7 +85,9 @@ while (!header) {
             </a>
             </li>
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/contactUs.html">
+            <a class="dropdown-item" href="/pages/${
+              document.querySelector("html").lang
+            }/contactUs.html">
             <img src="../media/icons/phone.svg" alt="icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
@@ -116,83 +119,9 @@ while (!header) {
             </button>
             <ul class="dropdown-menu">
             <li>
-            <div class="notification">
-            <div class="notification_Title">
-              <h1>Notificaciones</h1>
-            </div>
-            <div class="notification_CautionOrange">
-              <div class="notification_Caution_Title">
-                <img
-                  src="../../media/icons/alert_Caution.svg"
-                  alt="Alert orange"
-                  class="notification_CautionOrange_icon"
-                />
-                <h3 class="notification_Type">Peligro</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-            <div class="notification_AlertMagenta">
-              <div class="notification_Alert_Title">
-                <img
-                  src="../../media/icons/alert magenta.svg"
-                  alt="Alert magenta"
-                  class="notification_AlertMagenta_icon"
-                />
-                <h3 class="notification_Type">Advertencia</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-            <div class="notification_InfoCyan">
-              <div class="notification_Information_Title">
-                <img
-                  src="../../media/icons/alert cyan.svg"
-                  alt="Alert cyan"
-                  class="notification_InfoCyan_icon"
-                />
-                <h3 class="notification_Type">Información</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-            <div class="notification_NewsPurple">
-              <div class="notification_News_Title">
-                <img
-                  src="../../media/icons/alert purple.svg"
-                  alt="Alert purple"
-                  class="notification_NewsPurple_icon"
-                />
-                <h3 class="notification_Type">Novedades</h3>
-              </div>
-              <div class="notification_Content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  inventore voluptas optio porro ullam magnam nobis natus quisquam?
-                  Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-                  dolor dicta rem impedit.
-                </p>
-              </div>
-            </div>
-          </div>
+            <section class="notification container_noti_noSee">
+                <p class="notification_Title"> No hay notificaciones pendientes </p>
+            </section>
             </li>
               </ul>
             </li>
@@ -270,7 +199,9 @@ while (!header) {
             </button>
             </li>
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/signUp.html">
+            <a class="dropdown-item" href="/pages/${
+              document.querySelector("html").lang
+            }/signUp.html">
             <img src="../media/icons/sign up.svg" alt="Icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
@@ -289,10 +220,13 @@ while (!header) {
               <div class="modal-dialog">
                 
                 <div class="modal-content signIn">
+                  <div class="signIn_Title">
+                    <h1>Bienvenido de nuevo!</h1>
+                  </div>
                 <section class="signIn_Form">
                   <form class="form" id="form">
                     <div class="signIn_Subtitle">
-                      <p>Usuario</p>
+                      <label>Usuario</label>
                     </div>
                     <div class="signIn_Form_Option">
                       <label for="Username">
@@ -311,7 +245,7 @@ while (!header) {
                       />
                     </div>
                     <div class="signIn_Subtitle">
-                      <p>Contraseña</p>
+                      <label>Contraseña</label>
                     </div>
                     <div class="signIn_Form_Option">
                       <label for="password">
@@ -389,14 +323,16 @@ while (!header) {
                   </div>
                   <div class="signIn_CreateAccount">
                     <label for="don't have">¿No tienes una cuenta?</label>
-                    <a href="/pages/${document.querySelector("html").lang}/signUp.html">Registrate</a>
+                    <a href="/pages/${
+                      document.querySelector("html").lang
+                    }/signUp.html">Registrate</a>
                   </div>
                 </section>
                   </div>
                 </div>
               
             </div>
-            `
+            `;
     document.querySelector(".menu-left").innerHTML = `
           <div class="offcanvas offcanvas-start menu-left" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
             
@@ -412,9 +348,15 @@ while (!header) {
 
                 <div class="collapse" id="service-Menu">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/updateRoadStatus.html"><span class="itemList">-</span> Estado de la Carretera</a>
-                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/gasStation.html"><span class="itemList">-</span> Estación de Servicio, Disponibilidad y Precio</a>
-                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/mechanic.html"><span class="itemList">-</span> Mecánica</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/updateRoadStatus.html"><span class="itemList">-</span> Estado de la Carretera</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/gasStation.html"><span class="itemList">-</span> Estación de Servicio, Disponibilidad y Precio</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/mechanic.html"><span class="itemList">-</span> Mecánica</a>
                   </div>
                 </div>
               </div>
@@ -430,8 +372,12 @@ while (!header) {
                 
                 <div class="collapse" id="history">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/savesMaps.html"><span class="itemList">-</span> Mapas Guardados</a>
-                    <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/mapHistory.html"><span class="itemList">-</span> Historial de Mapas</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/savesMaps.html"><span class="itemList">-</span> Mapas Guardados</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/mapHistory.html"><span class="itemList">-</span> Historial de Mapas</a>
                   </div>
                 </div>
               </div>
@@ -439,14 +385,18 @@ while (!header) {
               <div class="Item-menuLeft your_Route">
               <button class="btn d-flex" type="button">
                 <img src="../media/icons/route.svg" alt="Service-IconMenuLeft" />  
-                <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/yourRoute.html">Tu ruta</a>
+                <a class="dropdown-item" href="/pages/${
+                  document.querySelector("html").lang
+                }/yourRoute.html">Tu ruta</a>
               </button>
               </div>
 
               <div class="Item-menuLeft your_Report">
               <button class="btn d-flex" type="button">
                 <img src="../media/icons/report.svg" alt="Service-IconMenuLeft" />  
-                <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/yourReport.html">Tus Reportes</a> 
+                <a class="dropdown-item" href="/pages/${
+                  document.querySelector("html").lang
+                }/yourReport.html">Tus Reportes</a> 
               </button>
               </div>
 
@@ -503,9 +453,8 @@ while (!header) {
 
             </div>
           </div>
-        `
-
+        `;
   } else {
-    document.body.prepend(document.createElement("header"))
+    document.body.prepend(document.createElement("header"));
   }
 }

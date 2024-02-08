@@ -3,13 +3,12 @@ let header;
 
 /* Skeleton */
 while (!header) {
-  header = document.querySelector("header")
+  header = document.querySelector("header");
 
   if (header) {
-
-    const menu_left = document.createElement("div")
-    menu_left.classList = "menu-left"
-    document.body.appendChild(menu_left)
+    const menu_left = document.createElement("div");
+    menu_left.classList = "menu-left";
+    document.body.appendChild(menu_left);
 
     header.innerHTML = `
     <!-- Left side icons -->
@@ -74,7 +73,9 @@ while (!header) {
             </button>
             <ul class="dropdown-menu">
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/aboutUs.html">
+            <a class="dropdown-item" href="/pages/${
+              document.querySelector("html").lang
+            }/aboutUs.html">
             <img src="../media/icons/about us.svg" alt="icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
@@ -84,7 +85,9 @@ while (!header) {
             </a>
             </li>
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/contactUs.html">
+            <a class="dropdown-item" href="/pages/${
+              document.querySelector("html").lang
+            }/contactUs.html">
             <img src="../media/icons/phone.svg" alt="icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
@@ -170,7 +173,9 @@ while (!header) {
             </button>
             </li>
             <li>
-            <a class="dropdown-item" href="/pages/${document.querySelector("html").lang}/signUp.html">
+            <a class="dropdown-item" href="/pages/${
+              document.querySelector("html").lang
+            }/signUp.html">
             <img src="../media/icons/sign up.svg" alt="Icon" />
             <p
             class="d-flex justify-content-center align-content-center m-0"
@@ -189,10 +194,13 @@ while (!header) {
               <div class="modal-dialog">
                 
                 <div class="modal-content signIn">
+                <div class="signIn_Title">
+                    <h1>Welcome back!</h1>
+                  </div>
                 <section class="signIn_Form">
                   <form class="form" id="form">
                     <div class="signIn_Subtitle">
-                      <p>Username</p>
+                      <label>Username</label>
                     </div>
                     <div class="signIn_Form_Option">
                       <label for="Username">
@@ -206,12 +214,12 @@ while (!header) {
                         id="Username"
                         class="signIn_Form_Username"
                         type="text"
-                        placeholder="Username"
+                        placeholder="Usuario"
                         required
                       />
                     </div>
                     <div class="signIn_Subtitle">
-                      <p>Password</p>
+                      <label>Password</label>
                     </div>
                     <div class="signIn_Form_Option">
                       <label for="password">
@@ -244,7 +252,7 @@ while (!header) {
                           type="checkbox"
                           id="remember"
                         />
-                        <label for="remember">Remember me</label>
+                        <label for="remember">Remember</label>
                       </div>
                       <a href="#">Forgot password?</a>
                     </div>
@@ -289,14 +297,16 @@ while (!header) {
                   </div>
                   <div class="signIn_CreateAccount">
                     <label for="don't have">Don't have an account?</label>
-                    <a href="/pages/signUp">Sign up</a>
+                    <a href="/pages/${
+                      document.querySelector("html").lang
+                    }/signUp.html">Sign Up</a>
                   </div>
                 </section>
                   </div>
                 </div>
               
             </div>
-            `
+            `;
     document.querySelector(".menu-left").innerHTML = `
           <div class="offcanvas offcanvas-start menu-left" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false">
             
@@ -376,8 +386,8 @@ while (!header) {
           </div>
 
         
-        `
+        `;
   } else {
-    document.body.prepend(document.createElement("header"))
+    document.body.prepend(document.createElement("header"));
   }
 }
