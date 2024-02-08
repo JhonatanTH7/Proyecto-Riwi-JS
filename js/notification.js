@@ -7,11 +7,11 @@ let contadorNoti = 0;
 
 function alertaNoti(tipoAlerta) {
 
-    let box_Alert_event = document.getElementById("box_Alert_event")
-    let box_Alert_title = document.getElementById("box_Alert_title")
-    let imagen_box_Alert = document.getElementById("imagen_box_Alert")
-    let title_box_Alert_event = document.getElementById("title_box_Alert_event")
-    let notification_Content = document.querySelector(".notification_Content")
+    const box_Alert_event = notification_Emerg.querySelector("#box_Alert_event")
+    const box_Alert_title = notification_Emerg.querySelector("#box_Alert_title")
+    const imagen_box_Alert = notification_Emerg.querySelector("#imagen_box_Alert")
+    const title_box_Alert_event = notification_Emerg.querySelector("#title_box_Alert_event")
+    const notification_Content = notification_Emerg.querySelector(".notification_Content")
 
     switch (tipoAlerta) {
         case "caution":
@@ -20,11 +20,11 @@ function alertaNoti(tipoAlerta) {
             imagen_box_Alert.src =  "media/icons/alert_Caution.svg"
 
             if(document.querySelector("html").lang == "es") {
-                title_box_Alert_event.textContent = "precaución"
-                notification_Content = "Aqui va una descripcion del la alerta"
+                title_box_Alert_event.textContent = "Precaución"
+                notification_Content.textContent = "Aqui va una descripcion del la alerta"
             } else {
-                title_box_Alert_event.textContent = 
-                notification_Content = "Here is a description of the alert"
+                title_box_Alert_event.textContent = "Caution"
+                notification_Content.textContent = "Here is a description of the alert"
             }
             break;
 
@@ -34,11 +34,11 @@ function alertaNoti(tipoAlerta) {
             imagen_box_Alert.src = "media/icons/alert magenta.svg"
             
             if(document.querySelector("html").lang == "es") {
-                title_box_Alert_event.textContent = "alerta"
-                notification_Content = "Aqui va una descripcion del la alerta"
+                title_box_Alert_event.textContent = "Alerta"
+                notification_Content.textContent = "Aqui va una descripcion del la alerta"
             } else {
-                title_box_Alert_event.textContent = "alert"
-                notification_Content = "Here is a description of the alert"
+                title_box_Alert_event.textContent = "Alert"
+                notification_Content.textContent = "Here is a description of the alert"
             }
             break;
 
@@ -48,11 +48,11 @@ function alertaNoti(tipoAlerta) {
             imagen_box_Alert.src = "media/icons/alert cyan.svg"
             
             if(document.querySelector("html").lang == "es") {
-                title_box_Alert_event.textContent = "información"
-                notification_Content = "Aqui va una descripcion del la alerta"
+                title_box_Alert_event.textContent = "Información"
+                notification_Content.textContent = "Aqui va una descripcion del la alerta"
             } else {
-                title_box_Alert_event.textContent = "info"
-                notification_Content = "Here is a description of the alert"
+                title_box_Alert_event.textContent = "Info"
+                notification_Content.textContent = "Here is a description of the alert"
             }
             break;
 
@@ -62,35 +62,57 @@ function alertaNoti(tipoAlerta) {
             imagen_box_Alert.src = "media/icons/alert purple.svg"
             
             if(document.querySelector("html").lang == "es") {
-                title_box_Alert_event.textContent = "novedades"
-                notification_Content = "Aqui va una descripcion del la alerta"
+                title_box_Alert_event.textContent = "Novedades"
+                notification_Content.textContent = "Aqui va una descripcion del la alerta"
             } else {
-                title_box_Alert_event.textContent = "news"
-                notification_Content = "Here is a description of the alert"
+                title_box_Alert_event.textContent = "News"
+                notification_Content.textContent = "Here is a description of the alert"
             }
             break;
     }
 
     notification_Emerg.id = "animation"
+    
+    setTimeout(async () => {
+        await fetch("http://localhost:3000/notification", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            "type": tipoAlerta ,
+            "content": notification_Content.textContent,
+            "hour": new Date().toLocaleTimeString('en-US'),
+            "date": new Date().toLocaleDateString('en-US')
+        }),
+      });
+    }, 300000);
 
     setTimeout(() => {
         notification_Emerg.id = ""
         contadorNoti++
+        if(!bellIcon.classList.contains("notsee")){
+            bellIcon.classList.add("notsee")
+            container_noti_noSee.innerHTML = notification_Emerg.innerHTML;
+        } else {
+            container_noti_noSee.innerHTML += notification_Emerg.innerHTML;
+        }
 
         bellNoti.textContent = contadorNoti
-        container_noti_noSee.innerHTML += notification_Emerg.innerHTML;
-
     }, 9000);
 }
 
 bellIcon.addEventListener("click", () => {
     contadorNoti = "";
     bellNoti.textContent = contadorNoti;
+    if(bellIcon.classList.contains("notsee")){
+        bellIcon.classList.remove("notsee")
+    }
 })
 
 /* function for random alerts */
 setInterval(() => {
     const type = ["alert", "news", "info", "caution"]
-    alertaNoti(type[Math.floor(Math.random()*4)])
-}, 30000);
-
+    const eleccion = type[Math.floor(Math.random()*4)];
+    alertaNoti(eleccion)
+}, 50000);

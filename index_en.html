@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruta 57</title>
+  <link rel="shortcut icon" href="media/icons/Icon-favicon.svg" type="image/x-icon">
+  <title>rofi</title>
 
   <!-- Css Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,14 +24,41 @@
   <script src="js/map.js"></script>
 
   <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/signIn.css">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/signIn.css">
+  <link rel="stylesheet" href="styles/notification.css">
 </head>
 
 <body>
-  
+  <!-- Preloader -->
+  <div class="preloader">
+    <div id="preloader_gif">
+      <img src="media/gifs/gif_ojosnegros.gif" width="100%">
+    </div>
+  </div>
+
+  <!-- map -->
   <div id="viewDiv"></div>
+
+  <!-- alert -->
+  <div class="notification-Emerg" id="">
+    <div class="notification_CautionOrange" id="box_Alert_event">
+      <div class="notification_Caution_Title" id="box_Alert_title">
+        <img src="/media/icons/alert_Caution.svg" alt="Alert orange" class="notification_CautionOrange_icon"
+          id="imagen_box_Alert" />
+        <h3 class="notification_Type" id="title_box_Alert_event">CAUTION</h3>
+      </div>
+      <div class="notification_Content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+          inventore voluptas optio porro ullam magnam nobis natus quisquam?
+          Reprehenderit modi iusto quaerat excepturi deleniti labore harum
+          dolor dicta rem impedit.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!-- SCRIPTS -->
   <!-- Skeleton - Normalize -->
@@ -43,6 +71,7 @@
   <script src="js/header.js"></script>
   <script src="js/signIn.js"></script>
   <script src="js/darkMode.js"></script>
+  <script src="js/notification.js"></script>
 </body>
 
 </html>

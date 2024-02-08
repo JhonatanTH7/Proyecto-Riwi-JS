@@ -37,14 +37,14 @@ while (!header) {
           </div>
           <!-- Logo -->
           <a href="index_${document.querySelector("html").lang}.html">
-          <img class="icon-logo-index" src="../media/icons/logo_prueba2.png" alt="logo" />
+          <img class="icon-logo-index" src="../media/icons/logo_final_ligthmode.svg" alt="logo" />
           </a>
           <!-- Page name -->
           <!-- <h6 class="m-0">Ruta 57</h6> -->
           </div>
           
           <!-- Input search bar -->
-          <div class="navBar_searchBar">
+          <!-- <div class="navBar_searchBar">
           <input
           type="search"
           id="search_bar"
@@ -52,7 +52,7 @@ while (!header) {
           placeholder="Search"
           />
           <label for="search_bar"><img src="../media/icons/search.svg" /></label>
-          </div>
+          </div> -->
           
           <!-- Right side icons -->
           <div class="navBar_icons_rigthSide">
@@ -98,8 +98,34 @@ while (!header) {
             </li>
             </ul>
             </li>
+
             <!-- Notifications -->
+            <li class="nav-item dropdown navBar_helpDropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >
+            <div class="bellIcon">
             <img src="../media/icons/notification.svg" alt="Bell" />
+            <span class="contadorNoti"></span>
+            </div>
+            <img
+            src="../media/icons/arrow down.png"
+            class="arrow_down_dropdownMenu"
+            />
+            </button>
+            <ul class="dropdown-menu">
+            <li>
+            <section class="notification container_noti_noSee">
+                <p class="notification_Title"> There are no pending notifications </p>
+            </section>
+            </li>
+              </ul>
+            </li>
+            
             
             <!-- DropDown language-->
             <li class="nav-item dropdown navBar_languageDropdown">
@@ -173,6 +199,13 @@ while (!header) {
             </button>
             </li>
             <li>
+            
+            <p
+            class="d-flex justify-content-center align-content-center m-0 d-none">
+            Name
+            </p>
+            </li>
+            <li>
             <a class="dropdown-item" href="/pages/${
               document.querySelector("html").lang
             }/signUp.html">
@@ -194,7 +227,7 @@ while (!header) {
               <div class="modal-dialog">
                 
                 <div class="modal-content signIn">
-                <div class="signIn_Title">
+                  <div class="signIn_Title">
                     <h1>Welcome back!</h1>
                   </div>
                 <section class="signIn_Form">
@@ -214,12 +247,12 @@ while (!header) {
                         id="Username"
                         class="signIn_Form_Username"
                         type="text"
-                        placeholder="Usuario"
+                        placeholder="Usuername"
                         required
                       />
                     </div>
                     <div class="signIn_Subtitle">
-                      <label>Password</label>
+                      <label>Contraseña</label>
                     </div>
                     <div class="signIn_Form_Option">
                       <label for="password">
@@ -243,6 +276,13 @@ while (!header) {
                         alt="eye_input"
                         class="signIn_Form_Eye_Icon"
                       />
+
+                      <img
+                        id="Eye_Icon_Show"
+                        src="/media/icons/ojo.png"
+                        alt="eye_input"
+                        class="signIn_Form_Eye_Icon"
+                      />
                     </div>
           
                     <div class="signIn_Checkbox">
@@ -252,17 +292,17 @@ while (!header) {
                           type="checkbox"
                           id="remember"
                         />
-                        <label for="remember">Remember</label>
+                        <label for="remember">Remember me</label>
                       </div>
-                      <a href="#">Forgot password?</a>
+                      <a href="./pages/forgetPassword.html">forget your password?</a>
                     </div>
           
-                    <button class="signIn_Button" type="submit">SIGN IN</button>
+                    <button class="signIn_Button" type="submit">Sign In</button>
                   </form>
           
                   <div class="SignIn_Continue">
                     <div class="SignIn_Continue"></div>
-                    <p>Or continue with</p>
+                    <p>Or Sign In With</p>
                   </div>
           
                   <div class="SignIn_SocialMedia">
@@ -296,10 +336,10 @@ while (!header) {
                     </div>
                   </div>
                   <div class="signIn_CreateAccount">
-                    <label for="don't have">Don't have an account?</label>
+                    <label for="don't have">You do not have an account?</label>
                     <a href="/pages/${
                       document.querySelector("html").lang
-                    }/signUp.html">Sign Up</a>
+                    }/signUp.html">Sing Up</a>
                   </div>
                 </section>
                   </div>
@@ -322,14 +362,20 @@ while (!header) {
 
                 <div class="collapse" id="service-Menu">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Update Road Status</a>
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Service Station, Availability and Price</a>
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Mechanic</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/updateRoadStatus.html"><span class="itemList">-</span> Update Road Status</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/gasStation.html"><span class="itemList">-</span> Service Station, Availability and Price</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/mechanic.html"><span class="itemList">-</span> Mechanics</a>
                   </div>
                 </div>
               </div>
 
-              <div class="Item-menuLeft history">
+              <div class="Item-menuLeft history d-none">
                 <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#history" aria-expanded="false" aria-controls="history">
                     <div class="d-flex">    
                       <img src="../media/icons/map.svg" alt="Service-IconMenuLeft" />  
@@ -340,8 +386,12 @@ while (!header) {
                 
                 <div class="collapse" id="history">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Saved Maps</a>
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Map History</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/savesMaps.html"><span class="itemList">-</span> Saved Maps</a>
+                    <a class="dropdown-item" href="/pages/${
+                      document.querySelector("html").lang
+                    }/mapHistory.html"><span class="itemList">-</span> Map History</a>
                   </div>
                 </div>
               </div>
@@ -349,14 +399,18 @@ while (!header) {
               <div class="Item-menuLeft your_Route">
               <button class="btn d-flex" type="button">
                 <img src="../media/icons/route.svg" alt="Service-IconMenuLeft" />  
-                <a class="dropdown-item" href="#">Your Route</a>
+                <a class="dropdown-item" href="/pages/${
+                  document.querySelector("html").lang
+                }/yourRoute.html">Your Route</a>
               </button>
               </div>
 
-              <div class="Item-menuLeft your_Report">
+              <div class="Item-menuLeft your_Report d-none">
               <button class="btn d-flex" type="button">
                 <img src="../media/icons/report.svg" alt="Service-IconMenuLeft" />  
-                <a class="dropdown-item" href="#">Your Report</a> 
+                <a class="dropdown-item" href="/pages/${
+                  document.querySelector("html").lang
+                }/yourReport.html">Your Report</a> 
               </button>
               </div>
 
@@ -371,7 +425,36 @@ while (!header) {
                 
                 <div class="collapse" id="setting">
                   <div class="card card-body">
-                    <a class="dropdown-item" href="#"><span class="itemList">-</span> Language</a>
+                    <a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#languaje" aria-expanded="false" aria-controls="languaje"><span class="itemList">-</span> Language
+                    <img src="../media/icons/arrow down.png" class="arrow_down_dropdownMenu"/>
+                    </a>
+                    <div class="collapse" id="languaje">
+                    <a class="dropdown-item" href="index_es.html"
+                    ><img
+                    src="../media/icons/Spain-Flag.png"
+                    class="navBar_languageDropdown_flag"
+                    />
+                    
+                    <p
+                    class="d-flex justify-content-center align-content-center m-0"
+                    >
+                    Spanish
+                    </p></a
+                    >
+
+                    <a class="dropdown-item" href="index_en.html"
+                    ><img
+                    src="../media/icons/USA-Flag.png"
+                    class="navBar_languageDropdown_flag"
+                    />
+                    <p
+                    class="d-flex justify-content-center align-content-center m-0"
+                    >
+                    English
+                    </p></a
+                    >
+                    </div>
+                    
                     <a class="dropdown-item" href="#"><span class="itemList">-</span> 
                     <div class="form-check form-switch form-check-reverse">
                     <input class="form-check-input inputDarkMode" type="checkbox" id="flexSwitchCheckReverse">
@@ -382,10 +465,12 @@ while (!header) {
                 </div>
               </div>
 
+              <div class="log_out d-none">
+              <button type="button" class="btn btn-danger">Log Out</button>
+              </div>
+
             </div>
           </div>
-
-        
         `;
   } else {
     document.body.prepend(document.createElement("header"));

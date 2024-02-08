@@ -2,11 +2,14 @@
 
 /* Contact Us styles */
 .contactUs {
+  padding-top: 8vh;
+  margin-top: 8vh;
   height: 64vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .form_contactUs {
@@ -63,4 +66,12 @@
   font-weight: bold;
   height: 40px;
   width: 150px;
+  margin-bottom: 50px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("../media/fotos fondo/pexels-teresa-5326167.jpg");
+  background-size: cover !important;
 }

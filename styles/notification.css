@@ -186,7 +186,19 @@ body {
   height: min-content;
   overflow: hidden;
 }
+.container_noti_noSee {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+}
 
+.container_noti_noSee p {
+  background: none !important;
+}
+
+.container_noti_noSee_dark {
+  background: var(--backgorundGray) !important;
+}
 @keyframes alertShow {
   0% {
     opacity: 0;

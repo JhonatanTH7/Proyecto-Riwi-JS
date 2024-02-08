@@ -19,7 +19,8 @@ function darkmodeactive(element) {
       try {
         if (
           elementChild.id != "exampleModal" &&
-          elementChild.id != "preloader_gif"
+          elementChild.id != "preloader_gif" &&
+          !element.classList.contains("container_About_Us")
         ) {
           elementChild.style.background = "#1b1b1b";
           elementChild.style.color = "white";
@@ -33,6 +34,10 @@ function darkmodeactive(element) {
           elementChild
             .querySelector(".modal-content")
             .classList.add("darkmode_singIn");
+        }
+
+        if(elementChild.classList.contains("container_noti_noSee")) {
+          elementChild.classList.add("container_noti_noSee_dark")
         }
       } catch (error) {
         console.log(error, elementChild);

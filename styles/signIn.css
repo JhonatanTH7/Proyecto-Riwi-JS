@@ -149,3 +149,7 @@ body {
 .signIn_CreateAccount {
   margin-left: 180px;
 }
+
+#Eye_Icon_Show {
+  display: none;
+}

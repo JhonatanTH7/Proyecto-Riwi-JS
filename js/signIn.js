@@ -1,29 +1,29 @@
 /* Selectors SingIN */
 const form_SignIn = document.getElementById("Form");
 const userName_SignIn = document.getElementById("Username");
-const userPassword_Signin = document.getElementById("Password");
+const userPassword_Signin = document.getElementById("password");
 const eye_Icon = document.getElementById("Eye_Icon");
 const eye_Icon_Show = document.getElementById("Eye_Icon_Show");
 
 /* Events SingIN */
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  signIn();
-  
-  eye_Icon.addEventListener("click", () => {
-    eye_Icon.style.display = "none"
-    eye_Icon_Show.style.display = "block"
-
-    userPassword.type = "text"
-  })
-
-  eye_Icon_Show.addEventListener("click", () => {
-    eye_Icon_Show.style.display = "none"
-    eye_Icon.style.display = "block"
-
-    userPassword.type = "password"
-  })
+  signIn();  
 });
+
+eye_Icon.addEventListener("click", () => {
+  eye_Icon.style.display = "none"
+  eye_Icon_Show.style.display = "block"
+
+  userPassword_Signin.type = "text"
+})
+
+eye_Icon_Show.addEventListener("click", () => {
+  eye_Icon_Show.style.display = "none"
+  eye_Icon.style.display = "block"
+
+  userPassword_Signin.type = "password"
+})
 
 /* Funcion SingIN */
 async function signIn() {

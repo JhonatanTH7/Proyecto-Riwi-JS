@@ -276,6 +276,13 @@ while (!header) {
                         alt="eye_input"
                         class="signIn_Form_Eye_Icon"
                       />
+
+                      <img
+                        id="Eye_Icon_Show"
+                        src="/media/icons/ojo.png"
+                        alt="eye_input"
+                        class="signIn_Form_Eye_Icon"
+                      />
                     </div>
           
                     <div class="signIn_Checkbox">
@@ -287,7 +294,7 @@ while (!header) {
                         />
                         <label for="remember">Recordame</label>
                       </div>
-                      <a href="#">¿Olvidaste tu contraseña?</a>
+                      <a href="./pages/forgetPassword.html">¿Olvidaste tu contraseña?</a>
                     </div>
           
                     <button class="signIn_Button" type="submit">Iniciar Sesión</button>
@@ -368,7 +375,7 @@ while (!header) {
                 </div>
               </div>
 
-              <div class="Item-menuLeft history">
+              <div class="Item-menuLeft history d-none">
                 <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#history" aria-expanded="false" aria-controls="history">
                     <div class="d-flex">    
                       <img src="../media/icons/map.svg" alt="Service-IconMenuLeft" />  
@@ -398,7 +405,7 @@ while (!header) {
               </button>
               </div>
 
-              <div class="Item-menuLeft your_Report">
+              <div class="Item-menuLeft your_Report d-none">
               <button class="btn d-flex" type="button">
                 <img src="../media/icons/report.svg" alt="Service-IconMenuLeft" />  
                 <a class="dropdown-item" href="/pages/${
@@ -458,8 +465,8 @@ while (!header) {
                 </div>
               </div>
 
-              <div class="log_out">
-              <button type="button" class="btn btn-danger">Log Out</button>
+              <div class="log_out d-none">
+              <button type="button" class="btn btn-danger">Cerrar Sesión</button>
               </div>
 
             </div>
