@@ -1,69 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="media/icons/" type="image/x-icon" />
+    <title>rofi</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="media/icons/" type="image/x-icon">
-  <title>rofi</title>
+    <!-- Css Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Js Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Css Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <!-- Js Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/signIn.css" />
+    <link rel="stylesheet" href="../../styles/notification.css" />
+    <link rel="stylesheet" href="../../styles/UpdateRoadStatus.css" />
+  </head>
 
-  <!-- Css Header, SingIn, Normalize, Menu Left, IconChange -->
-  <link rel="stylesheet" href="../../styles/normalize.css">
-  <link rel="stylesheet" href="../../styles/header.css">
-  <link rel="stylesheet" href="../../styles/signIn.css">
-  <link rel="stylesheet" href="../../styles/notification.css">
-</head>
-
-<body>
-  <div class="notification-Emerg" id="">
-    <div class="notification_CautionOrange" id="box_Alert_event">
-      <div class="notification_Caution_Title" id="box_Alert_title">
+  <body>
+    <div class="update">
+      <div class="update_Title">
         <img
-          src="/media/icons/alert_Caution.svg"
-          alt="Alert orange"
-          class="notification_CautionOrange_icon"
-          id="imagen_box_Alert"
+          class="update_Notification_Icon"
+          src="../../media/icons/notification.svg"
+          alt="notification"
         />
-        <h3 class="notification_Type" id="title_box_Alert_event">CAUTION</h3>
+        <h1 class="update_Page_Title">Update Road Status</h1>
       </div>
-      <div class="notification_Content">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-          inventore voluptas optio porro ullam magnam nobis natus quisquam?
-          Reprehenderit modi iusto quaerat excepturi deleniti labore harum
-          dolor dicta rem impedit.
-        </p>
+      <div class="update_Table">
+        <table class="update_Table_Notifications">
+          <tr class="update_Table_RowThead">
+            <th>
+              <button
+                class="btn"
+                id="btn_Alert"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <img
+                  class="update_Alert_Icon"
+                  src="../../media/icons/alert magenta.svg"
+                  alt="alert magenta"
+                />Alert
+              </button>
+            </th>
+            <th>
+              <button
+                class="btn"
+                id="btn_Caution"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <img
+                  class="update_Alert_Icon"
+                  src="../../media/icons/alert_Caution.svg"
+                  alt="alert orange"
+                />Caution
+              </button>
+            </th>
+            <th>
+              <button
+                class="btn"
+                id="btn_Info"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <img
+                  class="update_Alert_Icon"
+                  src="../../media/icons/alert cyan.svg"
+                  alt="alert cyan"
+                />Information
+              </button>
+            </th>
+            <th>
+              <button
+                class="btn"
+                id="btn_News"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <img
+                  class="update_Alert_Icon"
+                  src="../../media/icons/alert purple.svg"
+                  alt="alert purple"
+                />News
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This
+                  panel is hidden by default but revealed when the user
+                  activates the relevant trigger.
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
-  </div>
 
-  <div class="container-notification">
+    <!-- SCRIPTS -->
+    <!-- Skeleton - Normalize -->
+    <script src="../../js/normalizePages_en.js"></script>
 
-  </div>
+    <!-- Js sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-
-  <!-- SCRIPTS -->
-  <!-- Skeleton - Normalize -->
-  <script src="../../js/normalizePages_en.js"></script>
-
-  <!-- Js sweetalert -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
-  <script src="../../js/header.js"></script>
-  <script src="../../js/signIn.js"></script>
-  <script src="../../js/darkMode.js"></script>
-  <script src="../../js/notification.js"></script>
-  <script src="../../js/updateRoadStatus.js"></script>
-</body>
-
+    <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
+    <script src="../../js/header.js"></script>
+    <script src="../../js/signIn.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/notification.js"></script>
+    <script src="../../js/updateRoadStatus.js"></script>
+  </body>
 </html>
