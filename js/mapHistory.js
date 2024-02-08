@@ -14,13 +14,18 @@ async function getdata() {
 
 function drawHistory(history) {
   history.forEach((record) => {
+    let URLimg = "../../media/icons/star gray.svg";
+    if (record.favorite == true) {
+      URLimg = "../../media/icons/star yellow.svg";
+    }
     containerCards.innerHTML += `
     <div class="card">
               <div class="text-end">
               <img
-                  src="../../media/icons/star gray.svg"
+                  src="${URLimg}"
                   class="star"
                   alt="star"
+                  data-id="${record.id}"
                   />
                   </div>
                   <div class="text-center">
@@ -65,17 +70,30 @@ function drawHistory(history) {
                   </div>
                   `;
   });
-  detectStars();
+
+  detectStars(history);
 }
 
-function detectStars() {
+function detectStars(history) {
   document.querySelectorAll(".star").forEach((star) => {
-    star.addEventListener("click", () => {
-      if (star.getAttribute("src") == "../../media/icons/star gray.svg") {
-        star.setAttribute("src", "../../media/icons/star yellow.svg");
-      } else {
-        star.setAttribute("src", "../../media/icons/star gray.svg");
-      }
+    star.addEventListener("click", async () => {
+      const id = star.getAttribute("data-id");
+      const recordSelected = history.filter((record) => record.id == id);
+      await fetch(`${URLHistoryPage}/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: recordSelected[0].from,
+          to: recordSelected[0].to,
+          start: recordSelected[0].start,
+          end: recordSelected[0].end,
+          date: recordSelected[0].date,
+          km: recordSelected[0].km,
+          favorite: !recordSelected[0].favorite,
+        }),
+      });
     });
   });
 }
@@ -97,8 +115,9 @@ filterContent.addEventListener("input", async () => {
       inputFilterSince.value <= record.date &&
       inputFilterTo.value >= record.date
   );
-  console.log(data);
   drawHistory(data);
 });
 
-getdata();
+document.addEventListener("DOMContentLoaded", () => {
+  getdata();
+});

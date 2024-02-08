@@ -69,6 +69,7 @@
 .star {
   height: 22px;
   margin: 7px;
+  cursor: pointer;
 }
 
 .card {
