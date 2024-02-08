@@ -1,0 +1,14 @@
+/* about us */
+/* container cards */
+.container_About_Us {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.cardInd_Info {
+    height: 60%;
+    object-fit: contain;
+}

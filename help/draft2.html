@@ -7,15 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <style>
-        body {
-            background-color: gray;
-        }
-    </style>
-    <video src="../media/video/Puerco araña.mp4" autoplay></video>
-    <video src="../media/gifs/gif_preloader.webm" type="video/webm" width="500" controls autoplay></video>
+    <form action="">
+        <div class="sada">
+            <input type="text">
+        </div>
+        <div class="sada">
+            <input type="text">
+        </div>
+        <button>hola</button>
+    </form>
+
     <script>
-        
+        const btn = document.querySelector("form")
+
+        btn.addEventListener("submit", (event) => {
+            event.preventDefault()
+        })
+
     </script>
+    
 </body>
 </html>

@@ -2,15 +2,13 @@
 
 body {
   background: var(--white);
-  width: 100vw;
-  height: 100vh;
 }
 
 .yourRoute {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .yourRoute_Title {
@@ -19,7 +17,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 30px;
+  padding: 20px;
+}
+.yourRoute_Text {
+  font-weight: bold;
 }
 
 .yourRoute_Icon {
@@ -30,7 +31,6 @@ body {
 .yourRoute_Form {
   display: flex;
   justify-content: center;
-  padding: 20px;
 }
 
 .form,
@@ -85,7 +85,7 @@ body {
   justify-content: space-between;
 }
 .yourRoute_Form_Info {
-  height: 10px;
+  height: 20px;
 }
 
 .yourRoute_Form_Label_From,
@@ -95,8 +95,6 @@ body {
 .yourRoute_Form_Label_kilometers,
 .yourRoute_Form_Label_Toll,
 .yourRoute_Form_Label_Total {
-  width: 230px;
-  height: 45px;
   display: flex;
   border-radius: 10px;
   justify-content: center;

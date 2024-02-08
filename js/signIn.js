@@ -6,23 +6,24 @@ const eye_Icon = document.getElementById("Eye_Icon");
 const eye_Icon_Show = document.getElementById("Eye_Icon_Show");
 
 /* Events SingIN */
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   signin();
-// eye_Icon.addEventListener("click", () => {
-//     eye_Icon.style.display = "none"
-//     eye_Icon_Show.style.display = "block"
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  signIn();
+  
+  eye_Icon.addEventListener("click", () => {
+    eye_Icon.style.display = "none"
+    eye_Icon_Show.style.display = "block"
 
-//     userPassword.type = "text"
-//   })
+    userPassword.type = "text"
+  })
 
-//   eye_Icon_Show.addEventListener("click", () => {
-//     eye_Icon_Show.style.display = "none"
-//     eye_Icon.style.display = "block"
+  eye_Icon_Show.addEventListener("click", () => {
+    eye_Icon_Show.style.display = "none"
+    eye_Icon.style.display = "block"
 
-//     userPassword.type = "password"
-//   })
-// });
+    userPassword.type = "password"
+  })
+});
 
 /* Funcion SingIN */
 async function signIn() {
@@ -39,9 +40,8 @@ async function signIn() {
 
   if (data[0].password === userPassword_Signin.value) {
     localStorage.setItem("isLogin", "true");
-    window.location.href = `../../index_${
-      document.querySelector("html").lang
-    }.html`;
+    window.location.href = `../../index_${document.querySelector("html").lang
+      }.html`;
   } else {
     console.log("Incorrect password");
   }
