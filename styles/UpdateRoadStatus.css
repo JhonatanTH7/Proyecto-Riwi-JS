@@ -30,6 +30,10 @@ body {
 .update_Title img {
   height: 60px;
 }
+.update_Table_Notifications {
+  width: min-content;
+  height: min-content;
+}
 .update_Table {
   display: flex;
   flex-direction: row;
@@ -37,6 +41,8 @@ body {
   align-items: center;
 }
 .update_Table_RowThead {
+  width: min-content;
+  height: min-content;
   display: flex;
   gap: 20px;
 }
@@ -86,7 +92,7 @@ body {
   gap: 10px;
 }
 
-.collapse {
+.card card-body {
   display: flex;
   justify-content: center;
   padding-top: 10px;
