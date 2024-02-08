@@ -5,6 +5,10 @@ const userPassword_Signin = document.getElementById("Password");
 const eye_Icon = document.getElementById("Eye_Icon");
 const eye_Icon_Show = document.getElementById("Eye_Icon_Show");
 
+const history = document.querySelector(".history")
+const log_out = document.querySelector(".log_out")
+const userlogin = document.querySelector(".userlogin")
+
 /* Events SingIN */
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -34,12 +38,13 @@ async function signIn() {
   console.log(data);
 
   if (!data.length) {
-    alert("Email not registered");
+    alert("UserName not registered");
     return;
   }
 
   if (data[0].password === userPassword_Signin.value) {
     localStorage.setItem("isLogin", "true");
+    localStorage.setItem("User",JSON.stringify(data[0]))
     window.location.href = `../../index_${document.querySelector("html").lang
       }.html`;
   } else {

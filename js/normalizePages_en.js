@@ -187,7 +187,7 @@ while (!header) {
             class="arrow_down_dropdownMenu"
             />
             </button>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu userlogin">
             <li>
             <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img src="../../media/icons/sign in.svg" alt="Icon" />
