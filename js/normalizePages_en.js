@@ -28,7 +28,7 @@ while (!header) {
                 <img src="../../media/icons/info.svg" alt="Menu" />
               </div>
               <div class="back-flip">
-                <img class="back-flip-imagen" src="../media/icons/info-ligthMode.svg" alt="Menu" />
+                <img class="back-flip-imagen" src="../../media/icons/info-ligthMode.svg" alt="Menu" />
               </div>
             </div>
           </div> 
@@ -354,10 +354,10 @@ while (!header) {
               <div class="Item-menuLeft service">
                   <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#service-Menu" aria-expanded="false" aria-controls="service-Menu">
                     <div class="d-flex">
-                      <img src="../media/icons/service.svg" alt="Service-IconMenuLeft" />  
+                      <img src="../../media/icons/service.svg" alt="Service-IconMenuLeft" />  
                       <span>Service</span>
                     </div>
-                    <img src="../media/icons/arrow down.png" class="arrow_down_dropdownMenu"/>
+                    <img src="../../media/icons/arrow down.png" class="arrow_down_dropdownMenu"/>
                   </button>
 
                 <div class="collapse" id="service-Menu">
