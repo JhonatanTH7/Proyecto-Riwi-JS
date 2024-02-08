@@ -199,6 +199,13 @@ while (!header) {
             </button>
             </li>
             <li>
+            
+            <p
+            class="d-flex justify-content-center align-content-center m-0 d-none">
+            nombre
+            </p>
+            </li>
+            <li>
             <a class="dropdown-item" href="/pages/${
               document.querySelector("html").lang
             }/signUp.html">
@@ -449,6 +456,10 @@ while (!header) {
                     </a>
                   </div>
                 </div>
+              </div>
+
+              <div class="log_out">
+              <button type="button" class="btn btn-danger">Log Out</button>
               </div>
 
             </div>

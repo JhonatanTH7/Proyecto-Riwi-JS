@@ -63,11 +63,27 @@ body {
   justify-content: center;
   background: var(--backInputs);
 }
+
+.signIn_Form_Option label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .signIn_Form_User_Icon,
 .signIn_Form_Key_Icon,
 .signIn_Form_Eye_Icon {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  filter: contrast(0.3);
+}
+
+.signIn_Form_Eye_Icon {
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .signIn_Checkbox {

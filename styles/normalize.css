@@ -105,8 +105,14 @@ body {
   align-items: center;
 }
 
-.offcanvas-body::-webkit-scrollbar-thumb {
+.menu-left .offcanvas-body::-webkit-scrollbar-thumb {
   color: var(--green);
+}
+
+.menu-left .log_out {
+  position: absolute;
+  bottom: 10px;
+  left: 28%;
 }
 
 footer {

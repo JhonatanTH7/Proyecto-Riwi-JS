@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wait">
+        <div class="description">
+            <img src="../../media/fotos fondo/manteniminetos.png" alt="">
+        </div>
+        <div class="gif">
+            <img src="../../media/gifs/barricada.gif" alt="">
+        </div>
+    </div>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .wait {
+            display: flex;
+        }
+
+        .description, .gif{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+
+        .gif {
+            background: url(../../media/fotos\ fondo/manteni.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "../../index_es.html"
+        }, 5000);
+    </script>
+</body>
+</html>

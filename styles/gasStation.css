@@ -1,0 +1,11 @@
+@import url(normalize.css);
+
+.container-gas {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    overflow-y: scroll;
+}
