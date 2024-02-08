@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Rout</title>
+    <title>Your Route</title>
 
     <!-- Css Bootstrap -->
     <link
@@ -58,6 +58,7 @@
                   class="yourRoute_Form_Label_From"
                   type="text"
                   name="From"
+                  disabled
                 />
               </div>
 
@@ -68,6 +69,7 @@
                   class="yourRoute_Form_Label_To"
                   type="text"
                   name="to"
+                  disabled
                 />
               </div>
             </div>
@@ -79,6 +81,11 @@
                   src="../../media/icons/info.svg"
                   alt="info"
                   class="yourRoute_Form_Info"
+                />
+                <img
+                  src="../../media/icons/categories.jpg"
+                  alt="categories"
+                  class="imgCategories d-none"
                 />
               </div>
               <select
@@ -103,8 +110,9 @@
               <input
                 id="Appriximate"
                 class="yourRoute_Form_Label_Appriximate"
-                type="number"
+                type="text"
                 name="Appriximate"
+                disabled
               />
             </div>
             <div class="yourRoute_Form_Option_kilometers">
@@ -114,6 +122,7 @@
                 class="yourRoute_Form_Label_kilometers"
                 type="number"
                 name="kilometers"
+                disabled
               />
             </div>
             <div class="yourRoute_Form_Option_Toll">
@@ -123,6 +132,8 @@
                 class="yourRoute_Form_Label_Toll"
                 type="number"
                 name="Toll"
+                value="9"
+                disabled
               />
             </div>
             <div class="yourRoute_Form_Option_Total">
@@ -132,6 +143,7 @@
                 class="yourRoute_Form_Label_Total"
                 type="number"
                 name="Total"
+                disabled
               />
             </div>
           </div>
@@ -139,12 +151,24 @@
       </section>
       <section class="yourRoute_Advisories">
         <div class="yourRoute_Advisories_counseling">
-          <h2 class="Road_Advisories">Road Advisories</h2>
-          <img
-            src="../../media/icons/vinus.svg"
-            alt="concesion vial del nus"
-            class="Road_Advisories_Icon"
-          />
+          <h2 class="Road_Advisories fw-bold">Road Advisories</h2>
+          <div>
+            <div class="Road_Advisories_DropUp d-none">
+              <ul class="list-unstyled">
+                <li class="fw-bold text-center">Services</li>
+                <li>Ambulance</li>
+                <li>Crane</li>
+                <li>Trolley crane</li>
+              </ul>
+            </div>
+            <img
+              src="../../media/icons/vinus.svg"
+              alt="concesion vial del nus"
+              class="Road_Advisories_Icon dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            />
+          </div>
         </div>
       </section>
     </div>
@@ -158,5 +182,6 @@
     <!-- Js Header, SingIn, Normalize, Menu Left, IconChange -->
     <script src="../../js/header.js"></script>
     <script src="../../js/signIn.js"></script>
+    <script src="../../js/yourRoute.js"></script>
   </body>
 </html>

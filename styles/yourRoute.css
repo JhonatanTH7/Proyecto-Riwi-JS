@@ -8,7 +8,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* gap: 30px; */
 }
 
 .yourRoute_Title {
@@ -86,6 +85,7 @@ body {
 }
 .yourRoute_Form_Info {
   height: 20px;
+  cursor: pointer;
 }
 
 .yourRoute_Form_Label_From,
@@ -132,5 +132,26 @@ body {
 .Road_Advisories_Icon {
   height: 80px;
   border-radius: 10px;
-  border: 2px solid var(--magenta);
+  cursor: pointer;
+}
+
+.Road_Advisories_DropUp {
+  position: absolute;
+  background: var(--white);
+  border: 1px solid var(--magenta);
+  border-radius: 10px;
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 170px;
+  left: 150px;
+}
+
+.imgCategories {
+  position: absolute;
+  height: 400px;
+  top: 200px;
+  left: 325px;
+  border-radius: 10px;
+  border: 1px solid var(--magenta);
 }
