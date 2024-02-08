@@ -112,6 +112,20 @@
       "content": "Aqui va una descripcion del la alerta",
       "hour": "5:10:58 AM",
       "date": "2/8/2024"
+    },
+    {
+      "id": "408f",
+      "type": "alert",
+      "content": "Aqui va una descripcion del la alerta",
+      "hour": "5:11:58 AM",
+      "date": "2/8/2024"
+    },
+    {
+      "id": "3873",
+      "type": "alert",
+      "content": "Aqui va una descripcion del la alerta",
+      "hour": "5:12:58 AM",
+      "date": "2/8/2024"
     }
   ],
   "history": [
