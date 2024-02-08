@@ -35,19 +35,23 @@
   "notification": [
     {
       "type": "alert",
-      "content": "sddqwdq"
+      "content": "sddqwdq",
+      "id": "5a92"
     },
     {
       "type": "caution",
-      "content": "sddqwdq"
+      "content": "sddqwdq",
+      "id": "0313"
     },
     {
       "type": "info",
-      "content": "sddqwdq"
+      "content": "sddqwdq",
+      "id": "6d7b"
     },
     {
       "type": "news",
-      "content": "sddqwdq"
+      "content": "sddqwdq",
+      "id": "e470"
     }
   ],
   "history": [
@@ -57,7 +61,9 @@
       "start": "10:00",
       "end": "19:00",
       "date": "2022-06-06",
-      "km": "497"
+      "km": "497",
+      "favorite": true,
+      "id": "b7cd"
     },
     {
       "from": "Medellìn",
@@ -65,7 +71,9 @@
       "start": "1:00",
       "end": "12:00",
       "date": "2022-06-06",
-      "km": "465"
+      "km": "465",
+      "favorite": false,
+      "id": "c3b0"
     },
     {
       "from": "Medellìn",
@@ -73,7 +81,9 @@
       "start": "05:00",
       "end": "14:00",
       "date": "2023-06-06",
-      "km": "497"
+      "km": "497",
+      "favorite": false,
+      "id": "05af"
     },
     {
       "from": "Medellìn",
@@ -81,7 +91,20 @@
       "start": "20:00",
       "end": "05:00",
       "date": "2023-05-04",
-      "km": "497"
+      "km": "497",
+      "favorite": true,
+      "id": "8cde"
+    }
+  ],
+  "reports": [
+    {
+      "id": "47be",
+      "date": "2025-03-08",
+      "hour": "12:42",
+      "name": "ed",
+      "email": "w@wd",
+      "location": "br",
+      "details": "wdc"
     }
   ]
 }
