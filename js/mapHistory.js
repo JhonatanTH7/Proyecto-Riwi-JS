@@ -74,14 +74,6 @@ function drawHistory(history) {
   detectStars(history);
 }
 
-// // star.addEventListener("click", () => {
-// //   if (record.favorite == true) {
-// //     record.favorite = false;
-// //   } else {
-// //     record.favorite = true;
-// //   }
-// // });
-
 function detectStars(history) {
   document.querySelectorAll(".star").forEach((star) => {
     star.addEventListener("click", async () => {
@@ -102,26 +94,6 @@ function detectStars(history) {
           favorite: !recordSelected[0].favorite,
         }),
       });
-
-      // history.forEach(async (record) => {
-      //   if (record.id == id) {
-      //     await fetch(`${URLHistoryPage}/${id}`, {
-      //       method: "PUT",
-      //       headers: {
-      //         "Content-Type": "application/json",
-      //       },
-      //       body: JSON.stringify({
-      //         from: record.from,
-      //         to: record.to,
-      //         start: record.start,
-      //         end: record.end,
-      //         date: record.date,
-      //         km: record.km,
-      //         favorite: !record.favorite,
-      //       }),
-      //     });
-      //   }
-      // });
     });
   });
 }
@@ -146,4 +118,6 @@ filterContent.addEventListener("input", async () => {
   drawHistory(data);
 });
 
-getdata();
+document.addEventListener("DOMContentLoaded", () => {
+  getdata();
+});

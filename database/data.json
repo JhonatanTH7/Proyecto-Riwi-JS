@@ -10,28 +10,6 @@
       "NMobile": "245151561"
     }
   ],
-  "saved": [
-    {
-      "from": "AMNTE",
-      "to": "Coveñas",
-      "id": "0001"
-    },
-    {
-      "from": "Medellìn",
-      "to": "Coveñas",
-      "id": "0002"
-    },
-    {
-      "from": "Medellìn",
-      "to": "Coveñas",
-      "id": "0003"
-    },
-    {
-      "from": "Medellìn",
-      "to": "Coveñas",
-      "id": "0004"
-    }
-  ],
   "notification": [
     {
       "type": "alert",
@@ -57,7 +35,7 @@
   "history": [
     {
       "from": "Medellìn",
-      "to": "Coveñas",
+      "to": "Cali",
       "start": "10:00",
       "end": "19:00",
       "date": "2022-06-06",
@@ -67,12 +45,12 @@
     },
     {
       "from": "Medellìn",
-      "to": "Coveñas",
+      "to": "Bucaramanchester",
       "start": "1:00",
       "end": "12:00",
       "date": "2022-06-06",
       "km": "465",
-      "favorite": false,
+      "favorite": true,
       "id": "c3b0"
     },
     {
@@ -82,17 +60,17 @@
       "end": "14:00",
       "date": "2023-06-06",
       "km": "497",
-      "favorite": false,
+      "favorite": true,
       "id": "05af"
     },
     {
       "from": "Medellìn",
-      "to": "Coveñas",
+      "to": "Bogota",
       "start": "20:00",
       "end": "05:00",
       "date": "2023-05-04",
       "km": "497",
-      "favorite": true,
+      "favorite": false,
       "id": "8cde"
     }
   ],
