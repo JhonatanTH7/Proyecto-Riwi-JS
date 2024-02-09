@@ -6,7 +6,7 @@ const userName = document.getElementById("username");
 const userPassword = document.getElementById("password");
 const mobile = document.getElementById("mobile");
 
-const URL = "http://localhost:3000/users";
+const URL = "https://jhonatanth7.github.io/users";
 
 form_SingUp.addEventListener("submit", (event) => {
   event.preventDefault();
